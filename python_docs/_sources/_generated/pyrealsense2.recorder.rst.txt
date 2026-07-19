@@ -28,7 +28,6 @@ pyrealsense2.recorder
       ~recorder.first_color_sensor
       ~recorder.first_depth_sensor
       ~recorder.first_fisheye_sensor
-      ~recorder.first_inference_sensor
       ~recorder.first_motion_sensor
       ~recorder.first_pose_sensor
       ~recorder.first_roi_sensor

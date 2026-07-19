@@ -28,7 +28,6 @@ pyrealsense2.device_calibration
       ~device_calibration.first_color_sensor
       ~device_calibration.first_depth_sensor
       ~device_calibration.first_fisheye_sensor
-      ~device_calibration.first_inference_sensor
       ~device_calibration.first_motion_sensor
       ~device_calibration.first_pose_sensor
       ~device_calibration.first_roi_sensor

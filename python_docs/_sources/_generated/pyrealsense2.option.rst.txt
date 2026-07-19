@@ -105,7 +105,6 @@ pyrealsense2.option
       ~option.power_line_frequency
       ~option.pre_processing_sharpening
       ~option.projector_temperature
-      ~option.readout_shaping
       ~option.receiver_gain
       ~option.receiver_sensitivity
       ~option.region_of_interest

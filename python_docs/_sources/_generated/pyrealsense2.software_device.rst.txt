@@ -31,7 +31,6 @@ pyrealsense2.software_device
       ~software_device.first_color_sensor
       ~software_device.first_depth_sensor
       ~software_device.first_fisheye_sensor
-      ~software_device.first_inference_sensor
       ~software_device.first_motion_sensor
       ~software_device.first_pose_sensor
       ~software_device.first_roi_sensor

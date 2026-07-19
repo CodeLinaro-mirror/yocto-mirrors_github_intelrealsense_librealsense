@@ -30,7 +30,6 @@ pyrealsense2.firmware_logger
       ~firmware_logger.first_color_sensor
       ~firmware_logger.first_depth_sensor
       ~firmware_logger.first_fisheye_sensor
-      ~firmware_logger.first_inference_sensor
       ~firmware_logger.first_motion_sensor
       ~firmware_logger.first_pose_sensor
       ~firmware_logger.first_roi_sensor

@@ -29,7 +29,6 @@ pyrealsense2.auto_calibrated_device
       ~auto_calibrated_device.first_color_sensor
       ~auto_calibrated_device.first_depth_sensor
       ~auto_calibrated_device.first_fisheye_sensor
-      ~auto_calibrated_device.first_inference_sensor
       ~auto_calibrated_device.first_motion_sensor
       ~auto_calibrated_device.first_pose_sensor
       ~auto_calibrated_device.first_roi_sensor

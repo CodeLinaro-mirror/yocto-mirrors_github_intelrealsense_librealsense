@@ -3063,7 +3063,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2aa33483b61e03f49aab1960aec6b4edd3"><param name="Name" value="RS2_OPTION_POWER_LINE_FREQUENCY"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ac6a35e21bf01ffe0a52865721fbbfbd1"><param name="Name" value="RS2_OPTION_PRE_PROCESSING_SHARPENING"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a4f018c9ff9bbb1ccf523b7efc1db0b3b"><param name="Name" value="RS2_OPTION_PROJECTOR_TEMPERATURE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2aa7a955b473230da2c6bb9b39105ea835"><param name="Name" value="RS2_OPTION_READOUT_SHAPING"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a1fdf472b6056486d4dc2f8cce8dd2787"><param name="Name" value="RS2_OPTION_RECEIVER_SENSITIVITY"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structrs2__option__rect.html"><param name="Name" value="rs2_option_rect"></OBJECT>
   <UL>
@@ -4196,7 +4195,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2aa33483b61e03f49aab1960aec6b4edd3"><param name="Name" value="RS2_OPTION_POWER_LINE_FREQUENCY"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ac6a35e21bf01ffe0a52865721fbbfbd1"><param name="Name" value="RS2_OPTION_PRE_PROCESSING_SHARPENING"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a4f018c9ff9bbb1ccf523b7efc1db0b3b"><param name="Name" value="RS2_OPTION_PROJECTOR_TEMPERATURE"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2aa7a955b473230da2c6bb9b39105ea835"><param name="Name" value="RS2_OPTION_READOUT_SHAPING"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a1fdf472b6056486d4dc2f8cce8dd2787"><param name="Name" value="RS2_OPTION_RECEIVER_SENSITIVITY"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#aa16c85dfdaae1d48123367abdedf8e14"><param name="Name" value="rs2_option_rect"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ae90e934983b809e93cdf9b2d8164015d"><param name="Name" value="RS2_OPTION_REGION_OF_INTEREST"></OBJECT>

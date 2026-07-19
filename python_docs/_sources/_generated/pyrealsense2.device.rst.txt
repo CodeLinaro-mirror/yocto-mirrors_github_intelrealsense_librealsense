@@ -28,7 +28,6 @@ pyrealsense2.device
       ~device.first_color_sensor
       ~device.first_depth_sensor
       ~device.first_fisheye_sensor
-      ~device.first_inference_sensor
       ~device.first_motion_sensor
       ~device.first_pose_sensor
       ~device.first_roi_sensor

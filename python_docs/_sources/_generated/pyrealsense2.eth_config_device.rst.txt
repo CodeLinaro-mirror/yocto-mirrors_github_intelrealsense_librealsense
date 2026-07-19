@@ -28,7 +28,6 @@ pyrealsense2.eth_config_device
       ~eth_config_device.first_color_sensor
       ~eth_config_device.first_depth_sensor
       ~eth_config_device.first_fisheye_sensor
-      ~eth_config_device.first_inference_sensor
       ~eth_config_device.first_motion_sensor
       ~eth_config_device.first_pose_sensor
       ~eth_config_device.first_roi_sensor
