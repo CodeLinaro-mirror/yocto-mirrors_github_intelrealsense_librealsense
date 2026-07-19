@@ -26,6 +26,7 @@ pyrealsense2.embedded_filter_type
    .. autosummary::
    
       ~embedded_filter_type.decimation
+      ~embedded_filter_type.improved_close_range_depth
       ~embedded_filter_type.name
       ~embedded_filter_type.temporal
       ~embedded_filter_type.value

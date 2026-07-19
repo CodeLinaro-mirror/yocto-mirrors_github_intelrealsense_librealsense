@@ -32,6 +32,7 @@ pyrealsense2.debug_stream_sensor
       ~debug_stream_sensor.from_frame
       ~debug_stream_sensor.get_active_streams
       ~debug_stream_sensor.get_debug_stream_profiles
+      ~debug_stream_sensor.get_embedded_close_range_filter
       ~debug_stream_sensor.get_embedded_decimation_filter
       ~debug_stream_sensor.get_embedded_filter
       ~debug_stream_sensor.get_embedded_temporal_filter

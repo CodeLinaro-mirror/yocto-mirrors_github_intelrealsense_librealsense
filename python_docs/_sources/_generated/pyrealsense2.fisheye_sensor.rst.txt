@@ -31,6 +31,7 @@ pyrealsense2.fisheye_sensor
       ~fisheye_sensor.close
       ~fisheye_sensor.from_frame
       ~fisheye_sensor.get_active_streams
+      ~fisheye_sensor.get_embedded_close_range_filter
       ~fisheye_sensor.get_embedded_decimation_filter
       ~fisheye_sensor.get_embedded_filter
       ~fisheye_sensor.get_embedded_temporal_filter

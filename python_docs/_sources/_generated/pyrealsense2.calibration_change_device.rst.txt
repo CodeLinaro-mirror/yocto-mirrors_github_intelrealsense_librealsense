@@ -28,10 +28,12 @@ pyrealsense2.calibration_change_device
       ~calibration_change_device.first_color_sensor
       ~calibration_change_device.first_depth_sensor
       ~calibration_change_device.first_fisheye_sensor
+      ~calibration_change_device.first_inference_sensor
       ~calibration_change_device.first_motion_sensor
       ~calibration_change_device.first_pose_sensor
       ~calibration_change_device.first_roi_sensor
       ~calibration_change_device.first_safety_sensor
+      ~calibration_change_device.get_firmware_min_version
       ~calibration_change_device.get_info
       ~calibration_change_device.hardware_reset
       ~calibration_change_device.is_auto_calibrated_device

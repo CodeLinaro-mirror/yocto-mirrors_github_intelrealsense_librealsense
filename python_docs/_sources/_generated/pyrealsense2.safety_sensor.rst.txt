@@ -32,6 +32,7 @@ pyrealsense2.safety_sensor
       ~safety_sensor.from_frame
       ~safety_sensor.get_active_streams
       ~safety_sensor.get_application_config
+      ~safety_sensor.get_embedded_close_range_filter
       ~safety_sensor.get_embedded_decimation_filter
       ~safety_sensor.get_embedded_filter
       ~safety_sensor.get_embedded_temporal_filter

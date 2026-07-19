@@ -375,12 +375,13 @@ Enumerations</h2></td></tr>
 <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aab42b87d5a45c3e26f89ac5bd939420bc">RS2_EXTENSION_DECIMATION_EMBEDDED_FILTER</a>, 
 <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa5cf76ecc09fb096eaf65e6c13d2829db">RS2_EXTENSION_TEMPORAL_EMBEDDED_FILTER</a>, 
 <br />
-&#160;&#160;<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aadb1cf457414858731289907e2bba09d4">RS2_EXTENSION_INFERENCE_FRAME</a>, 
+&#160;&#160;<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa1ec7e68446b69cf71e6dcce1d0ec2e7c">RS2_EXTENSION_CLOSE_RANGE_EMBEDDED_FILTER</a>, 
+<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aadb1cf457414858731289907e2bba09d4">RS2_EXTENSION_INFERENCE_FRAME</a>, 
 <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aaafdd4bd2eb58da68c1b39b5c6398a948">RS2_EXTENSION_OBJECT_DETECTION_FRAME</a>, 
 <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa8cddfbce1a183915c493a0c124661a03">RS2_EXTENSION_INFERENCE_SENSOR</a>, 
-<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa7e24d5e845ae43ee06a8685d76bf93b4">RS2_EXTENSION_OBJECT_DETECTION_SENSOR</a>, 
 <br />
-&#160;&#160;<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa86b64b3e214b99dfaee1f517a72ec64e">RS2_EXTENSION_INFERENCE_PROFILE</a>, 
+&#160;&#160;<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa7e24d5e845ae43ee06a8685d76bf93b4">RS2_EXTENSION_OBJECT_DETECTION_SENSOR</a>, 
+<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa86b64b3e214b99dfaee1f517a72ec64e">RS2_EXTENSION_INFERENCE_PROFILE</a>, 
 <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa0b4f59b824f69d456b53638b0f4ddef4">RS2_EXTENSION_COUNT</a>
 <br />
  }</td></tr>
@@ -431,10 +432,14 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a152f294a5b3fbde1a079ed4489375208"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac21576fc658b02356300a2efcf81df7a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#ac21576fc658b02356300a2efcf81df7a">rs2_embedded_filter_type</a> { <a class="el" href="rs__types_8h.html#ac21576fc658b02356300a2efcf81df7aa62328a082659ee248b0111786fddad91">RS2_EMBEDDED_FILTER_TYPE_FIRST</a>, 
+<tr class="memitem:ac21576fc658b02356300a2efcf81df7a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#ac21576fc658b02356300a2efcf81df7a">rs2_embedded_filter_type</a> { <br />
+&#160;&#160;<a class="el" href="rs__types_8h.html#ac21576fc658b02356300a2efcf81df7aa62328a082659ee248b0111786fddad91">RS2_EMBEDDED_FILTER_TYPE_FIRST</a>, 
 <a class="el" href="rs__types_8h.html#ac21576fc658b02356300a2efcf81df7aa4a09e9d8cd2552f5f2c982b27b0620a0">RS2_EMBEDDED_FILTER_TYPE_DECIMATION</a> = RS2_EMBEDDED_FILTER_TYPE_FIRST, 
 <a class="el" href="rs__types_8h.html#ac21576fc658b02356300a2efcf81df7aae08716e3c4f74742eae6169a1c546811">RS2_EMBEDDED_FILTER_TYPE_TEMPORAL</a>, 
-<a class="el" href="rs__types_8h.html#ac21576fc658b02356300a2efcf81df7aa64d43b57e748eb9b5520324e757677e6">RS2_EMBEDDED_FILTER_TYPE_COUNT</a>
+<a class="el" href="rs__types_8h.html#ac21576fc658b02356300a2efcf81df7aa3418adf0d83784597f74d5467165d321">RS2_EMBEDDED_FILTER_TYPE_CLOSE_RANGE</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__types_8h.html#ac21576fc658b02356300a2efcf81df7aa64d43b57e748eb9b5520324e757677e6">RS2_EMBEDDED_FILTER_TYPE_COUNT</a>
+<br />
  }</td></tr>
 <tr class="separator:ac21576fc658b02356300a2efcf81df7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1511,6 +1516,7 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac21576fc658b02356300a2efcf81df7aa62328a082659ee248b0111786fddad91"></a>RS2_EMBEDDED_FILTER_TYPE_FIRST&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac21576fc658b02356300a2efcf81df7aa4a09e9d8cd2552f5f2c982b27b0620a0"></a>RS2_EMBEDDED_FILTER_TYPE_DECIMATION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac21576fc658b02356300a2efcf81df7aae08716e3c4f74742eae6169a1c546811"></a>RS2_EMBEDDED_FILTER_TYPE_TEMPORAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac21576fc658b02356300a2efcf81df7aa3418adf0d83784597f74d5467165d321"></a>RS2_EMBEDDED_FILTER_TYPE_CLOSE_RANGE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac21576fc658b02356300a2efcf81df7aa64d43b57e748eb9b5520324e757677e6"></a>RS2_EMBEDDED_FILTER_TYPE_COUNT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -1629,6 +1635,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa2f191f40256c6ff2c5844e11c7707f48"></a>RS2_EXTENSION_SUPPORTED_EMBEDDED_FILTERS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aab42b87d5a45c3e26f89ac5bd939420bc"></a>RS2_EXTENSION_DECIMATION_EMBEDDED_FILTER&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa5cf76ecc09fb096eaf65e6c13d2829db"></a>RS2_EXTENSION_TEMPORAL_EMBEDDED_FILTER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa1ec7e68446b69cf71e6dcce1d0ec2e7c"></a>RS2_EXTENSION_CLOSE_RANGE_EMBEDDED_FILTER&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aadb1cf457414858731289907e2bba09d4"></a>RS2_EXTENSION_INFERENCE_FRAME&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aaafdd4bd2eb58da68c1b39b5c6398a948"></a>RS2_EXTENSION_OBJECT_DETECTION_FRAME&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa8cddfbce1a183915c493a0c124661a03"></a>RS2_EXTENSION_INFERENCE_SENSOR&#160;</td><td class="fielddoc"></td></tr>

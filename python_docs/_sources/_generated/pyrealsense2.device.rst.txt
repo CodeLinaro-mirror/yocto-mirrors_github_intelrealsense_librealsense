@@ -28,10 +28,12 @@ pyrealsense2.device
       ~device.first_color_sensor
       ~device.first_depth_sensor
       ~device.first_fisheye_sensor
+      ~device.first_inference_sensor
       ~device.first_motion_sensor
       ~device.first_pose_sensor
       ~device.first_roi_sensor
       ~device.first_safety_sensor
+      ~device.get_firmware_min_version
       ~device.get_info
       ~device.hardware_reset
       ~device.is_auto_calibrated_device

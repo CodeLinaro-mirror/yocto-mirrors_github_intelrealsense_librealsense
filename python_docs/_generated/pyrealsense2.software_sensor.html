@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>pyrealsense2.software_sensor &#8212; pyrealsense2 2.58.2 documentation</title>
+    <title>pyrealsense2.software_sensor &#8212; pyrealsense2 2.58.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     
-    <script src="../_static/documentation_options.js?v=8742aa67"></script>
+    <script src="../_static/documentation_options.js?v=14c2a414"></script>
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     
@@ -25,7 +25,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.0 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">pyrealsense2.software_sensor</a></li> 
       </ul>
     </div>  
@@ -114,124 +114,127 @@
 <tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_active_streams</span></code>(self)</p></td>
 <td><p>Retrieves the list of stream profiles currently streaming on the sensor.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_embedded_decimation_filter</span></code>(self)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_embedded_close_range_filter</span></code>(self)</p></td>
+<td><p>Return the embedded Improved Close Range Depth filter in the sensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_embedded_decimation_filter</span></code>(self)</p></td>
 <td><p>Return the embedded decimation filter in the sensor.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_embedded_filter</span></code>(self, filter_type)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_embedded_filter</span></code>(self, filter_type)</p></td>
 <td><p>Return the embedded filter in the sensor by filter type.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_embedded_temporal_filter</span></code>(self)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_embedded_temporal_filter</span></code>(self)</p></td>
 <td><p>Return the embedded temporal filter in the sensor.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_info</span></code>(self, info)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_info</span></code>(self, info)</p></td>
 <td><p>Retrieve camera specific information, like versions of various internal components.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_option</span></code>(self, option)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_option</span></code>(self, option)</p></td>
 <td><p>Read option value from the device.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_option_description</span></code>(self, option)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_option_description</span></code>(self, option)</p></td>
 <td><p>Get option description.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_option_range</span></code>(self, option)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_option_range</span></code>(self, option)</p></td>
 <td><p>Retrieve the available range of values of a supported option</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_option_value</span></code>(self, arg0)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_option_value</span></code>(self, arg0)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_option_value_description</span></code>(self, option, value)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_option_value_description</span></code>(self, option, value)</p></td>
 <td><p>Get option value description (In case a specific option value holds special meaning)</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_recommended_filters</span></code>(self)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_recommended_filters</span></code>(self)</p></td>
 <td><p>Return the recommended list of filters by the sensor.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_stream_profiles</span></code>(self)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_stream_profiles</span></code>(self)</p></td>
 <td><p>Retrieves the list of stream profiles supported by the sensor.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_supported_options</span></code>(self)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_supported_options</span></code>(self)</p></td>
 <td><p>Retrieve list of supported options</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_color_sensor</span></code>(self)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_color_sensor</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_debug_stream_sensor</span></code>(self)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_debug_stream_sensor</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_depth_sensor</span></code>(self)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_depth_sensor</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_fisheye_sensor</span></code>(self)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_fisheye_sensor</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_inference_sensor</span></code>(self)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_inference_sensor</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_max_usable_range_sensor</span></code>(self)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_max_usable_range_sensor</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_motion_sensor</span></code>(self)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_motion_sensor</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_object_detection_sensor</span></code>(self)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_object_detection_sensor</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_option_read_only</span></code>(self, option)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_option_read_only</span></code>(self, option)</p></td>
 <td><p>Check if particular option is read only.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_pose_sensor</span></code>(self)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_pose_sensor</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_roi_sensor</span></code>(self)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_roi_sensor</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_safety_sensor</span></code>(self)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_safety_sensor</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_wheel_odometer</span></code>(self)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_wheel_odometer</span></code>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.on_motion_frame" title="pyrealsense2.software_sensor.on_motion_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_motion_frame</span></code></a>(self, frame)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.on_motion_frame" title="pyrealsense2.software_sensor.on_motion_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_motion_frame</span></code></a>(self, frame)</p></td>
 <td><p>Inject motion frame into the sensor</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.on_notification" title="pyrealsense2.software_sensor.on_notification"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_notification</span></code></a>(self, notif)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.on_notification" title="pyrealsense2.software_sensor.on_notification"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_notification</span></code></a>(self, notif)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_options_changed</span></code>(self, callback)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_options_changed</span></code>(self, callback)</p></td>
 <td><p>Sets a callback to notify in case options in this container change value</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.on_pose_frame" title="pyrealsense2.software_sensor.on_pose_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_pose_frame</span></code></a>(self, frame)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.on_pose_frame" title="pyrealsense2.software_sensor.on_pose_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_pose_frame</span></code></a>(self, frame)</p></td>
 <td><p>Inject pose frame into the sensor</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.on_video_frame" title="pyrealsense2.software_sensor.on_video_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_video_frame</span></code></a>(self, frame)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.on_video_frame" title="pyrealsense2.software_sensor.on_video_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_video_frame</span></code></a>(self, frame)</p></td>
 <td><p>Inject video frame into the sensor</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">open</span></code>(*args, **kwargs)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">open</span></code>(*args, **kwargs)</p></td>
 <td><p>Overloaded function.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">query_embedded_filters</span></code>(self)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">query_embedded_filters</span></code>(self)</p></td>
 <td><p>Return the list of embedded filters in the sensor.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.set_metadata" title="pyrealsense2.software_sensor.set_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_metadata</span></code></a>(self, value, type)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.set_metadata" title="pyrealsense2.software_sensor.set_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_metadata</span></code></a>(self, value, type)</p></td>
 <td><p>Set frame metadata for the upcoming frames</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_notifications_callback</span></code>(self, callback)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_notifications_callback</span></code>(self, callback)</p></td>
 <td><p>Register Notifications callback</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_option</span></code>(self, option, value)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_option</span></code>(self, option, value)</p></td>
 <td><p>Write new value to device option</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_option_value</span></code>(self, arg0, arg1)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_option_value</span></code>(self, arg0, arg1)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.set_read_only_option" title="pyrealsense2.software_sensor.set_read_only_option"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_read_only_option</span></code></a>(self, option, val)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.software_sensor.set_read_only_option" title="pyrealsense2.software_sensor.set_read_only_option"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_read_only_option</span></code></a>(self, option, val)</p></td>
 <td><p>Update value of registered read-only option</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">start</span></code>(*args, **kwargs)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">start</span></code>(*args, **kwargs)</p></td>
 <td><p>Overloaded function.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">stop</span></code>(self)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">stop</span></code>(self)</p></td>
 <td><p>Stop streaming.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">supports</span></code>(*args, **kwargs)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">supports</span></code>(*args, **kwargs)</p></td>
 <td><p>Overloaded function.</p></td>
 </tr>
 </tbody>
@@ -384,7 +387,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.2 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.0 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">pyrealsense2.software_sensor</a></li> 
       </ul>
     </div>

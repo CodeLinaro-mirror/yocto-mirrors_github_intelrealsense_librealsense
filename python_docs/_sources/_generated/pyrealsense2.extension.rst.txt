@@ -30,6 +30,7 @@ pyrealsense2.extension
       ~extension.auto_calibration_filter
       ~extension.calibrated_sensor
       ~extension.calibration_change_device
+      ~extension.close_range_embedded_filter
       ~extension.color_sensor
       ~extension.composite_frame
       ~extension.debug

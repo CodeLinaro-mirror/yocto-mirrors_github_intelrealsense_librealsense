@@ -29,12 +29,14 @@ pyrealsense2.auto_calibrated_device
       ~auto_calibrated_device.first_color_sensor
       ~auto_calibrated_device.first_depth_sensor
       ~auto_calibrated_device.first_fisheye_sensor
+      ~auto_calibrated_device.first_inference_sensor
       ~auto_calibrated_device.first_motion_sensor
       ~auto_calibrated_device.first_pose_sensor
       ~auto_calibrated_device.first_roi_sensor
       ~auto_calibrated_device.first_safety_sensor
       ~auto_calibrated_device.get_calibration_config
       ~auto_calibrated_device.get_calibration_table
+      ~auto_calibrated_device.get_firmware_min_version
       ~auto_calibrated_device.get_info
       ~auto_calibrated_device.hardware_reset
       ~auto_calibrated_device.is_auto_calibrated_device

@@ -31,10 +31,12 @@ pyrealsense2.updatable
       ~updatable.first_color_sensor
       ~updatable.first_depth_sensor
       ~updatable.first_fisheye_sensor
+      ~updatable.first_inference_sensor
       ~updatable.first_motion_sensor
       ~updatable.first_pose_sensor
       ~updatable.first_roi_sensor
       ~updatable.first_safety_sensor
+      ~updatable.get_firmware_min_version
       ~updatable.get_info
       ~updatable.hardware_reset
       ~updatable.is_auto_calibrated_device

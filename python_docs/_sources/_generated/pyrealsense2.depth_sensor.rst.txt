@@ -32,6 +32,7 @@ pyrealsense2.depth_sensor
       ~depth_sensor.from_frame
       ~depth_sensor.get_active_streams
       ~depth_sensor.get_depth_scale
+      ~depth_sensor.get_embedded_close_range_filter
       ~depth_sensor.get_embedded_decimation_filter
       ~depth_sensor.get_embedded_filter
       ~depth_sensor.get_embedded_temporal_filter

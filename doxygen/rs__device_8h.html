@@ -165,6 +165,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8cd01ad94180743706d6f1ae138d67e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d0edde60c63e77a2cbc9f9e4037fdc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a82d0edde60c63e77a2cbc9f9e4037fdc">rs2_check_firmware_compatibility</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, const void *fw_image, int fw_image_size, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a82d0edde60c63e77a2cbc9f9e4037fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763f32b1e7d348291211573bef3951e7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a763f32b1e7d348291211573bef3951e7">rs2_get_firmware_min_version</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a763f32b1e7d348291211573bef3951e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdf44a52bfd3ca88a6730e1383a50369"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#acdf44a52bfd3ca88a6730e1383a50369">rs2_update_firmware_unsigned</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, const void *fw_image, int fw_image_size, <a class="el" href="rs__types_8h.html#a60a099c83ec9152eafd74ed3455d7278">rs2_update_progress_callback_ptr</a> callback, void *client_data, int update_mode, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:acdf44a52bfd3ca88a6730e1383a50369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76fbaef56d03525a5fd147e78123508f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a76fbaef56d03525a5fd147e78123508f">rs2_enter_update_state</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -1217,6 +1219,42 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The requested camera info string, in a format specific to the device model </dd></dl>
+
+</div>
+</div>
+<a id="a763f32b1e7d348291211573bef3951e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a763f32b1e7d348291211573bef3951e7">&#9670;&nbsp;</a></span>rs2_get_firmware_min_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_get_firmware_min_version </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the minimum firmware version supported by this device's SKU. The device must implement the firmware-update protocol; otherwise the call fails. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>Device to query </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Minimum supported FW version as a dotted string (e.g. "5.10.0.17"), or null on error. The pointer is valid until the next call to this function on the same thread. </dd></dl>
 
 </div>
 </div>

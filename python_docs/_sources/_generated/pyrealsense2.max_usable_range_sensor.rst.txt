@@ -31,6 +31,7 @@ pyrealsense2.max_usable_range_sensor
       ~max_usable_range_sensor.close
       ~max_usable_range_sensor.from_frame
       ~max_usable_range_sensor.get_active_streams
+      ~max_usable_range_sensor.get_embedded_close_range_filter
       ~max_usable_range_sensor.get_embedded_decimation_filter
       ~max_usable_range_sensor.get_embedded_filter
       ~max_usable_range_sensor.get_embedded_temporal_filter

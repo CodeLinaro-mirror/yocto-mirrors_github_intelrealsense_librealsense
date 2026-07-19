@@ -31,6 +31,7 @@ pyrealsense2.wheel_odometer
       ~wheel_odometer.close
       ~wheel_odometer.from_frame
       ~wheel_odometer.get_active_streams
+      ~wheel_odometer.get_embedded_close_range_filter
       ~wheel_odometer.get_embedded_decimation_filter
       ~wheel_odometer.get_embedded_filter
       ~wheel_odometer.get_embedded_temporal_filter

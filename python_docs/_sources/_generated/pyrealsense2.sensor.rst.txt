@@ -31,6 +31,7 @@ pyrealsense2.sensor
       ~sensor.close
       ~sensor.from_frame
       ~sensor.get_active_streams
+      ~sensor.get_embedded_close_range_filter
       ~sensor.get_embedded_decimation_filter
       ~sensor.get_embedded_filter
       ~sensor.get_embedded_temporal_filter

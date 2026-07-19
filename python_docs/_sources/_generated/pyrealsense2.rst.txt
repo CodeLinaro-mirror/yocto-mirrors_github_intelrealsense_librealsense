@@ -9,11 +9,14 @@
    
    .. autosummary::
    
+      enable_metadata
       enable_rolling_log_file
       log
       log_to_callback
       log_to_console
       log_to_file
+      m420_converter
+      nv12_converter
       option_from_string
       reset_logger
       rs2_deproject_pixel_to_point
@@ -22,6 +25,8 @@
       rs2_project_point_to_pixel
       rs2_transform_point_to_point
       supports_eth_config
+      uyvy_converter
+      yuy2_converter
    
    
    

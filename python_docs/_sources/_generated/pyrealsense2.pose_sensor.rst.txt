@@ -32,6 +32,7 @@ pyrealsense2.pose_sensor
       ~pose_sensor.export_localization_map
       ~pose_sensor.from_frame
       ~pose_sensor.get_active_streams
+      ~pose_sensor.get_embedded_close_range_filter
       ~pose_sensor.get_embedded_decimation_filter
       ~pose_sensor.get_embedded_filter
       ~pose_sensor.get_embedded_temporal_filter

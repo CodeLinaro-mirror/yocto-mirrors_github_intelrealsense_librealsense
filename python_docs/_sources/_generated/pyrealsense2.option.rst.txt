@@ -46,6 +46,8 @@ pyrealsense2.option
       ~option.depth_offset
       ~option.depth_units
       ~option.digital_gain
+      ~option.disparity_shift
+      ~option.downscale_ratio
       ~option.embedded_filter_enabled
       ~option.emitter_always_on
       ~option.emitter_enabled
@@ -103,6 +105,7 @@ pyrealsense2.option
       ~option.power_line_frequency
       ~option.pre_processing_sharpening
       ~option.projector_temperature
+      ~option.readout_shaping
       ~option.receiver_gain
       ~option.receiver_sensitivity
       ~option.region_of_interest
@@ -125,6 +128,7 @@ pyrealsense2.option
       ~option.stream_index_filter
       ~option.texture_source
       ~option.thermal_compensation
+      ~option.threshold
       ~option.total_frame_drops
       ~option.transmitter_frequency
       ~option.trigger_camera_accuracy_health
