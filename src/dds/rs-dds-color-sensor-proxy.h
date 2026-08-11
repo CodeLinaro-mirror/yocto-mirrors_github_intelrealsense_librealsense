@@ -20,7 +20,7 @@ public:
                             std::shared_ptr< realdds::dds_device > const & dev )
         : dds_sensor_proxy( sensor_name, owner, dev )
     {
-    }
+    }//hi
 };
 
 
