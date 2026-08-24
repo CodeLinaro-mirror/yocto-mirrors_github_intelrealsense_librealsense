@@ -19,7 +19,7 @@
  code repository located at:
         http://github.com/signal11/hidapi .
 ********************************************************/
-
+dd
 /** @file
  * @defgroup API hidapi API
  */
