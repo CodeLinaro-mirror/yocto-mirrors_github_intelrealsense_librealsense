@@ -1,0 +1,79 @@
+pyrealsense2.perception_sensor
+==============================
+
+.. currentmodule:: pyrealsense2
+
+.. autoclass:: perception_sensor
+   :members:
+   :undoc-members:
+
+   
+   .. automethod:: __init__
+   
+   
+   .. rubric:: Methods
+   
+   .. autosummary::
+   
+      ~perception_sensor.__init__
+      ~perception_sensor.as_color_sensor
+      ~perception_sensor.as_debug_stream_sensor
+      ~perception_sensor.as_depth_sensor
+      ~perception_sensor.as_fisheye_sensor
+      ~perception_sensor.as_max_usable_range_sensor
+      ~perception_sensor.as_motion_sensor
+      ~perception_sensor.as_perception_sensor
+      ~perception_sensor.as_pose_sensor
+      ~perception_sensor.as_roi_sensor
+      ~perception_sensor.as_safety_sensor
+      ~perception_sensor.as_wheel_odometer
+      ~perception_sensor.close
+      ~perception_sensor.from_frame
+      ~perception_sensor.get_active_streams
+      ~perception_sensor.get_embedded_close_range_filter
+      ~perception_sensor.get_embedded_decimation_filter
+      ~perception_sensor.get_embedded_filter
+      ~perception_sensor.get_embedded_temporal_filter
+      ~perception_sensor.get_info
+      ~perception_sensor.get_option
+      ~perception_sensor.get_option_description
+      ~perception_sensor.get_option_range
+      ~perception_sensor.get_option_value
+      ~perception_sensor.get_option_value_description
+      ~perception_sensor.get_recommended_filters
+      ~perception_sensor.get_stream_profiles
+      ~perception_sensor.get_supported_options
+      ~perception_sensor.is_color_sensor
+      ~perception_sensor.is_debug_stream_sensor
+      ~perception_sensor.is_depth_sensor
+      ~perception_sensor.is_fisheye_sensor
+      ~perception_sensor.is_max_usable_range_sensor
+      ~perception_sensor.is_motion_sensor
+      ~perception_sensor.is_option_read_only
+      ~perception_sensor.is_perception_sensor
+      ~perception_sensor.is_pose_sensor
+      ~perception_sensor.is_roi_sensor
+      ~perception_sensor.is_safety_sensor
+      ~perception_sensor.is_wheel_odometer
+      ~perception_sensor.on_options_changed
+      ~perception_sensor.open
+      ~perception_sensor.query_embedded_filters
+      ~perception_sensor.set_notifications_callback
+      ~perception_sensor.set_option
+      ~perception_sensor.set_option_value
+      ~perception_sensor.start
+      ~perception_sensor.stop
+      ~perception_sensor.supports
+   
+   
+   
+   
+   
+   .. rubric:: Attributes
+   
+   .. autosummary::
+   
+      ~perception_sensor.name
+      ~perception_sensor.profiles
+   
+   

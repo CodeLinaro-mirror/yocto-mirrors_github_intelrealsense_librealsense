@@ -32,9 +32,11 @@ pyrealsense2.software_device
       ~software_device.first_depth_sensor
       ~software_device.first_fisheye_sensor
       ~software_device.first_motion_sensor
+      ~software_device.first_perception_sensor
       ~software_device.first_pose_sensor
       ~software_device.first_roi_sensor
       ~software_device.first_safety_sensor
+      ~software_device.get_device_time_ms
       ~software_device.get_firmware_min_version
       ~software_device.get_info
       ~software_device.hardware_reset

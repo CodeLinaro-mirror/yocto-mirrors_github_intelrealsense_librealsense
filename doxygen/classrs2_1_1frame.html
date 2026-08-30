@@ -60,14 +60,15 @@ Inheritance diagram for rs2::frame:</div>
  <div class="center">
   <img src="classrs2_1_1frame.png" usemap="#rs2::frame_map" alt=""/>
   <map id="rs2::frame_map" name="rs2::frame_map">
-<area href="classrs2_1_1frameset.html" alt="rs2::frameset" shape="rect" coords="139,56,268,80"/>
-<area href="classrs2_1_1gl_1_1gpu__frame.html" alt="rs2::gl::gpu_frame" shape="rect" coords="139,112,268,136"/>
-<area href="classrs2_1_1inference__frame.html" alt="rs2::inference_frame" shape="rect" coords="139,168,268,192"/>
-<area href="classrs2_1_1labeled__points.html" alt="rs2::labeled_points" shape="rect" coords="139,224,268,248"/>
-<area href="classrs2_1_1motion__frame.html" alt="rs2::motion_frame" shape="rect" coords="139,280,268,304"/>
-<area href="classrs2_1_1points.html" alt="rs2::points" shape="rect" coords="139,336,268,360"/>
-<area href="classrs2_1_1pose__frame.html" alt="rs2::pose_frame" shape="rect" coords="139,392,268,416"/>
-<area href="classrs2_1_1video__frame.html" alt="rs2::video_frame" shape="rect" coords="139,448,268,472"/>
+<area href="classrs2_1_1frameset.html" alt="rs2::frameset" shape="rect" coords="145,56,280,80"/>
+<area href="classrs2_1_1gl_1_1gpu__frame.html" alt="rs2::gl::gpu_frame" shape="rect" coords="145,112,280,136"/>
+<area href="classrs2_1_1gpu__frame.html" alt="rs2::gpu_frame" shape="rect" coords="145,168,280,192"/>
+<area href="classrs2_1_1labeled__points.html" alt="rs2::labeled_points" shape="rect" coords="145,224,280,248"/>
+<area href="classrs2_1_1motion__frame.html" alt="rs2::motion_frame" shape="rect" coords="145,280,280,304"/>
+<area href="classrs2_1_1perception__frame.html" alt="rs2::perception_frame" shape="rect" coords="145,336,280,360"/>
+<area href="classrs2_1_1points.html" alt="rs2::points" shape="rect" coords="145,392,280,416"/>
+<area href="classrs2_1_1pose__frame.html" alt="rs2::pose_frame" shape="rect" coords="145,448,280,472"/>
+<area href="classrs2_1_1video__frame.html" alt="rs2::video_frame" shape="rect" coords="145,504,280,528"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -107,6 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab3665db740b156cc9ef447796d349d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b373fc81617be881b691a97b0f8358c"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a4b373fc81617be881b691a97b0f8358c">get_data</a> () const</td></tr>
 <tr class="separator:a4b373fc81617be881b691a97b0f8358c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998b1694038b4d623ccae9b35a9cca7d"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#a998b1694038b4d623ccae9b35a9cca7d">get_gpu_data_or_upload</a> (bool *copied=nullptr) const</td></tr>
+<tr class="separator:a998b1694038b4d623ccae9b35a9cca7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac0387b1fe014785ea70b2aca157cf5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1stream__profile.html">stream_profile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame.html#aac0387b1fe014785ea70b2aca157cf5d">get_profile</a> () const</td></tr>
 <tr class="separator:aac0387b1fe014785ea70b2aca157cf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa24bdc32a341ae8dccc94571c695ecd6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
@@ -540,6 +543,39 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>retrieve the timestamp domain </p><dl class="section return"><dt>Returns</dt><dd>timestamp domain (clock name) for timestamp values </dd></dl>
+
+</div>
+</div>
+<a id="a998b1694038b4d623ccae9b35a9cca7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a998b1694038b4d623ccae9b35a9cca7d">&#9670;&nbsp;</a></span>get_gpu_data_or_upload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* rs2::frame::get_gpu_data_or_upload </td>
+          <td>(</td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>copied</em> = <code>nullptr</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieve a GPU device pointer for the frame, uploading it if necessary. Always returns a usable device pointer on a CUDA build (zero-copy when the frame is GPU-mapped, else an SDK-managed host-&gt;device copy); returns nullptr on non-CUDA builds. If <code>copied</code> is non-null it is set to true when the SDK had to upload, false when it was zero-copy. Valid only while this frame is held. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">copied</td><td>set to true if the SDK uploaded (a copy), false if zero-copy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GPU device pointer for the frame, or nullptr on non-CUDA builds </dd></dl>
 
 </div>
 </div>

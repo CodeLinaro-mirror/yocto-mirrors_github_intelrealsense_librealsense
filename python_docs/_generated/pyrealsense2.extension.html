@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>pyrealsense2.extension &#8212; pyrealsense2 2.58.3 documentation</title>
+    <title>pyrealsense2.extension &#8212; pyrealsense2 2.58.4 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     
-    <script src="../_static/documentation_options.js?v=233a2e7e"></script>
+    <script src="../_static/documentation_options.js?v=e8b3beb3"></script>
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     
@@ -25,7 +25,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.4 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">pyrealsense2.extension</a></li> 
       </ul>
     </div>  
@@ -108,11 +108,11 @@
 <p>decimation_embedded_filter</p>
 <p>temporal_embedded_filter</p>
 <p>close_range_embedded_filter</p>
-<p>inference_frame</p>
+<p>perception_frame</p>
 <p>object_detection_frame</p>
-<p>inference_sensor</p>
-<p>object_detection_sensor</p>
-<p>inference_profile</p>
+<p>perception_sensor</p>
+<p>perception_profile</p>
+<p>gpu_frame</p>
 </div></blockquote>
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrealsense2.extension.__init__">
@@ -202,19 +202,13 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.extension.global_timer" title="pyrealsense2.extension.global_timer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">global_timer</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.extension.hdr_merge" title="pyrealsense2.extension.hdr_merge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hdr_merge</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.extension.gpu_frame" title="pyrealsense2.extension.gpu_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gpu_frame</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.extension.hole_filling_filter" title="pyrealsense2.extension.hole_filling_filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hole_filling_filter</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.extension.hdr_merge" title="pyrealsense2.extension.hdr_merge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hdr_merge</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.extension.inference_frame" title="pyrealsense2.extension.inference_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">inference_frame</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.extension.inference_profile" title="pyrealsense2.extension.inference_profile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">inference_profile</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.extension.inference_sensor" title="pyrealsense2.extension.inference_sensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">inference_sensor</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.extension.hole_filling_filter" title="pyrealsense2.extension.hole_filling_filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hole_filling_filter</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.extension.info" title="pyrealsense2.extension.info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">info</span></code></a></p></td>
@@ -247,10 +241,16 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.extension.object_detection_frame" title="pyrealsense2.extension.object_detection_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object_detection_frame</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.extension.object_detection_sensor" title="pyrealsense2.extension.object_detection_sensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object_detection_sensor</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.extension.options" title="pyrealsense2.extension.options"><code class="xref py py-obj docutils literal notranslate"><span class="pre">options</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.extension.options" title="pyrealsense2.extension.options"><code class="xref py py-obj docutils literal notranslate"><span class="pre">options</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.extension.perception_frame" title="pyrealsense2.extension.perception_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">perception_frame</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.extension.perception_profile" title="pyrealsense2.extension.perception_profile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">perception_profile</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.extension.perception_sensor" title="pyrealsense2.extension.perception_sensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">perception_sensor</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.extension.playback" title="pyrealsense2.extension.playback"><code class="xref py py-obj docutils literal notranslate"><span class="pre">playback</span></code></a></p></td>
@@ -469,6 +469,11 @@
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="pyrealsense2.extension.gpu_frame">
+<span class="sig-name descname"><span class="pre">gpu_frame</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.gpu_frame:</span> <span class="pre">69&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.gpu_frame" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="pyrealsense2.extension.hdr_merge">
 <span class="sig-name descname"><span class="pre">hdr_merge</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.hdr_merge:</span> <span class="pre">51&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.hdr_merge" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -476,21 +481,6 @@
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pyrealsense2.extension.hole_filling_filter">
 <span class="sig-name descname"><span class="pre">hole_filling_filter</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.hole_filling_filter:</span> <span class="pre">30&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.hole_filling_filter" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="pyrealsense2.extension.inference_frame">
-<span class="sig-name descname"><span class="pre">inference_frame</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.inference_frame:</span> <span class="pre">65&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.inference_frame" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="pyrealsense2.extension.inference_profile">
-<span class="sig-name descname"><span class="pre">inference_profile</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.inference_profile:</span> <span class="pre">69&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.inference_profile" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="pyrealsense2.extension.inference_sensor">
-<span class="sig-name descname"><span class="pre">inference_sensor</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.inference_sensor:</span> <span class="pre">67&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.inference_sensor" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -544,13 +534,23 @@
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="pyrealsense2.extension.object_detection_sensor">
-<span class="sig-name descname"><span class="pre">object_detection_sensor</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.object_detection_sensor:</span> <span class="pre">68&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.object_detection_sensor" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyrealsense2.extension.options">
+<span class="sig-name descname"><span class="pre">options</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.options:</span> <span class="pre">4&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.options" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="pyrealsense2.extension.options">
-<span class="sig-name descname"><span class="pre">options</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.options:</span> <span class="pre">4&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.options" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyrealsense2.extension.perception_frame">
+<span class="sig-name descname"><span class="pre">perception_frame</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.perception_frame:</span> <span class="pre">65&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.perception_frame" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyrealsense2.extension.perception_profile">
+<span class="sig-name descname"><span class="pre">perception_profile</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.perception_profile:</span> <span class="pre">68&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.perception_profile" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyrealsense2.extension.perception_sensor">
+<span class="sig-name descname"><span class="pre">perception_sensor</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;extension.perception_sensor:</span> <span class="pre">67&gt;</span></span><a class="headerlink" href="#pyrealsense2.extension.perception_sensor" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -749,11 +749,9 @@
 <li><a class="reference internal" href="#pyrealsense2.extension.fisheye_sensor"><code class="docutils literal notranslate"><span class="pre">extension.fisheye_sensor</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.fw_logger"><code class="docutils literal notranslate"><span class="pre">extension.fw_logger</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.global_timer"><code class="docutils literal notranslate"><span class="pre">extension.global_timer</span></code></a></li>
+<li><a class="reference internal" href="#pyrealsense2.extension.gpu_frame"><code class="docutils literal notranslate"><span class="pre">extension.gpu_frame</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.hdr_merge"><code class="docutils literal notranslate"><span class="pre">extension.hdr_merge</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.hole_filling_filter"><code class="docutils literal notranslate"><span class="pre">extension.hole_filling_filter</span></code></a></li>
-<li><a class="reference internal" href="#pyrealsense2.extension.inference_frame"><code class="docutils literal notranslate"><span class="pre">extension.inference_frame</span></code></a></li>
-<li><a class="reference internal" href="#pyrealsense2.extension.inference_profile"><code class="docutils literal notranslate"><span class="pre">extension.inference_profile</span></code></a></li>
-<li><a class="reference internal" href="#pyrealsense2.extension.inference_sensor"><code class="docutils literal notranslate"><span class="pre">extension.inference_sensor</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.info"><code class="docutils literal notranslate"><span class="pre">extension.info</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.l500_depth_sensor"><code class="docutils literal notranslate"><span class="pre">extension.l500_depth_sensor</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.labeled_points"><code class="docutils literal notranslate"><span class="pre">extension.labeled_points</span></code></a></li>
@@ -763,8 +761,10 @@
 <li><a class="reference internal" href="#pyrealsense2.extension.motion_profile"><code class="docutils literal notranslate"><span class="pre">extension.motion_profile</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.motion_sensor"><code class="docutils literal notranslate"><span class="pre">extension.motion_sensor</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.object_detection_frame"><code class="docutils literal notranslate"><span class="pre">extension.object_detection_frame</span></code></a></li>
-<li><a class="reference internal" href="#pyrealsense2.extension.object_detection_sensor"><code class="docutils literal notranslate"><span class="pre">extension.object_detection_sensor</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.options"><code class="docutils literal notranslate"><span class="pre">extension.options</span></code></a></li>
+<li><a class="reference internal" href="#pyrealsense2.extension.perception_frame"><code class="docutils literal notranslate"><span class="pre">extension.perception_frame</span></code></a></li>
+<li><a class="reference internal" href="#pyrealsense2.extension.perception_profile"><code class="docutils literal notranslate"><span class="pre">extension.perception_profile</span></code></a></li>
+<li><a class="reference internal" href="#pyrealsense2.extension.perception_sensor"><code class="docutils literal notranslate"><span class="pre">extension.perception_sensor</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.playback"><code class="docutils literal notranslate"><span class="pre">extension.playback</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.points"><code class="docutils literal notranslate"><span class="pre">extension.points</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.extension.pose"><code class="docutils literal notranslate"><span class="pre">extension.pose</span></code></a></li>
@@ -833,7 +833,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.4 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">pyrealsense2.extension</a></li> 
       </ul>
     </div>

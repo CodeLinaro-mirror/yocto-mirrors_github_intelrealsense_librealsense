@@ -19,10 +19,11 @@ pyrealsense2.labeled_points
       ~labeled_points.as_depth_frame
       ~labeled_points.as_frame
       ~labeled_points.as_frameset
-      ~labeled_points.as_inference_frame
+      ~labeled_points.as_gpu_frame
       ~labeled_points.as_labeled_points
       ~labeled_points.as_motion_frame
       ~labeled_points.as_object_detection_frame
+      ~labeled_points.as_perception_frame
       ~labeled_points.as_points
       ~labeled_points.as_pose_frame
       ~labeled_points.as_video_frame
@@ -32,6 +33,7 @@ pyrealsense2.labeled_points
       ~labeled_points.get_frame_metadata
       ~labeled_points.get_frame_number
       ~labeled_points.get_frame_timestamp_domain
+      ~labeled_points.get_gpu_data_or_upload
       ~labeled_points.get_height
       ~labeled_points.get_labels
       ~labeled_points.get_profile
@@ -41,10 +43,11 @@ pyrealsense2.labeled_points
       ~labeled_points.is_depth_frame
       ~labeled_points.is_frame
       ~labeled_points.is_frameset
-      ~labeled_points.is_inference_frame
+      ~labeled_points.is_gpu_frame
       ~labeled_points.is_labeled_points
       ~labeled_points.is_motion_frame
       ~labeled_points.is_object_detection_frame
+      ~labeled_points.is_perception_frame
       ~labeled_points.is_points
       ~labeled_points.is_pose_frame
       ~labeled_points.is_video_frame

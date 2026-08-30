@@ -19,10 +19,11 @@ pyrealsense2.frame
       ~frame.as_depth_frame
       ~frame.as_frame
       ~frame.as_frameset
-      ~frame.as_inference_frame
+      ~frame.as_gpu_frame
       ~frame.as_labeled_points
       ~frame.as_motion_frame
       ~frame.as_object_detection_frame
+      ~frame.as_perception_frame
       ~frame.as_points
       ~frame.as_pose_frame
       ~frame.as_video_frame
@@ -31,15 +32,17 @@ pyrealsense2.frame
       ~frame.get_frame_metadata
       ~frame.get_frame_number
       ~frame.get_frame_timestamp_domain
+      ~frame.get_gpu_data_or_upload
       ~frame.get_profile
       ~frame.get_timestamp
       ~frame.is_depth_frame
       ~frame.is_frame
       ~frame.is_frameset
-      ~frame.is_inference_frame
+      ~frame.is_gpu_frame
       ~frame.is_labeled_points
       ~frame.is_motion_frame
       ~frame.is_object_detection_frame
+      ~frame.is_perception_frame
       ~frame.is_points
       ~frame.is_pose_frame
       ~frame.is_video_frame

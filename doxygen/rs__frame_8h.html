@@ -282,6 +282,10 @@ Functions</h2></td></tr>
 <tr class="separator:a168741ca96b42fd48f3035177e219c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3daf82be252d7a73a8105b2f13934d0c"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a3daf82be252d7a73a8105b2f13934d0c">rs2_get_frame_data</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a3daf82be252d7a73a8105b2f13934d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b69c59f6d72031f40f11e8ad5698dc"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#aa7b69c59f6d72031f40f11e8ad5698dc">rs2_get_frame_gpu_data</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:aa7b69c59f6d72031f40f11e8ad5698dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5454aa8fd3b1c24448c8737096fe7133"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a5454aa8fd3b1c24448c8737096fe7133">rs2_get_frame_gpu_data_or_upload</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, int *copied, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a5454aa8fd3b1c24448c8737096fe7133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97d95ba813aa92159d580ab3ae89b2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#ad97d95ba813aa92159d580ab3ae89b2e">rs2_get_frame_width</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:ad97d95ba813aa92159d580ab3ae89b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b10caf3806a26cdce9d19bf53d875cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a4b10caf3806a26cdce9d19bf53d875cb">rs2_get_frame_height</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -1380,6 +1384,85 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the size of the frame data </dd></dl>
+
+</div>
+</div>
+<a id="aa7b69c59f6d72031f40f11e8ad5698dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7b69c59f6d72031f40f11e8ad5698dc">&#9670;&nbsp;</a></span>rs2_get_frame_gpu_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* rs2_get_frame_gpu_data </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieve a GPU (CUDA) device pointer aliasing the frame data, for zero-copy consumption on the GPU (e.g. feeding the frame directly to a CUDA kernel / TensorRT inference without a host-&gt;device copy). Returns NULL unless the SDK was built with BUILD_WITH_CUDA_ZEROCOPY and is running on an integrated GPU (Jetson) where the frame buffer is GPU-mapped; in every other configuration callers should fall back to <a class="el" href="rs__frame_8h.html#a3daf82be252d7a73a8105b2f13934d0c">rs2_get_frame_data()</a> + their own upload. The returned pointer is valid only while the frame is held; do not use it after the frame is released. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>handle returned from a callback </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GPU device pointer aliasing the frame data, or NULL if unavailable </dd></dl>
+
+</div>
+</div>
+<a id="a5454aa8fd3b1c24448c8737096fe7133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5454aa8fd3b1c24448c8737096fe7133">&#9670;&nbsp;</a></span>rs2_get_frame_gpu_data_or_upload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* rs2_get_frame_gpu_data_or_upload </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>copied</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieve a GPU (CUDA) device pointer for the frame, uploading it if necessary. Unlike <a class="el" href="rs__frame_8h.html#aa7b69c59f6d72031f40f11e8ad5698dc">rs2_get_frame_gpu_data()</a> (which returns NULL when true zero-copy is unavailable), this always returns a usable device pointer on a CUDA build: zero-copy when the frame is GPU-mapped, or an SDK-managed host-&gt;device copy otherwise. <code>copied</code> (if non-null) is set to 0 when the pointer was zero-copy and 1 when the SDK uploaded. Returns NULL on non-CUDA builds. The pointer is valid only while the frame is held. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>handle returned from a callback </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">copied</td><td>if non-null, set to 1 if the SDK uploaded (a copy), 0 if zero-copy </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>GPU device pointer for the frame, or NULL on non-CUDA builds </dd></dl>
 
 </div>
 </div>

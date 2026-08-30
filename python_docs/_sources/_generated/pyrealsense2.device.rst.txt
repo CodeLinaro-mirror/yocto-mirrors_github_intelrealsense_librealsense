@@ -29,9 +29,11 @@ pyrealsense2.device
       ~device.first_depth_sensor
       ~device.first_fisheye_sensor
       ~device.first_motion_sensor
+      ~device.first_perception_sensor
       ~device.first_pose_sensor
       ~device.first_roi_sensor
       ~device.first_safety_sensor
+      ~device.get_device_time_ms
       ~device.get_firmware_min_version
       ~device.get_info
       ~device.hardware_reset

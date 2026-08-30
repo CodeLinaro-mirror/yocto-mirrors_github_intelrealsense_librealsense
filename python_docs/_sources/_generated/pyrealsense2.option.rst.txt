@@ -45,6 +45,7 @@ pyrealsense2.option
       ~option.contrast
       ~option.depth_offset
       ~option.depth_units
+      ~option.detection_distance
       ~option.digital_gain
       ~option.disparity_shift
       ~option.downscale_ratio
@@ -105,6 +106,7 @@ pyrealsense2.option
       ~option.power_line_frequency
       ~option.pre_processing_sharpening
       ~option.projector_temperature
+      ~option.readout_shaping
       ~option.receiver_gain
       ~option.receiver_sensitivity
       ~option.region_of_interest
@@ -116,6 +118,7 @@ pyrealsense2.option
       ~option.safety_preset_active_index
       ~option.saturation
       ~option.sensor_mode
+      ~option.sensors_config_mode
       ~option.sequence_id
       ~option.sequence_name
       ~option.sequence_size

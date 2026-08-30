@@ -1,0 +1,67 @@
+pyrealsense2.perception_frame
+=============================
+
+.. currentmodule:: pyrealsense2
+
+.. autoclass:: perception_frame
+   :members:
+   :undoc-members:
+
+   
+   .. automethod:: __init__
+   
+   
+   .. rubric:: Methods
+   
+   .. autosummary::
+   
+      ~perception_frame.__init__
+      ~perception_frame.as_depth_frame
+      ~perception_frame.as_frame
+      ~perception_frame.as_frameset
+      ~perception_frame.as_gpu_frame
+      ~perception_frame.as_labeled_points
+      ~perception_frame.as_motion_frame
+      ~perception_frame.as_object_detection_frame
+      ~perception_frame.as_perception_frame
+      ~perception_frame.as_points
+      ~perception_frame.as_pose_frame
+      ~perception_frame.as_video_frame
+      ~perception_frame.get_data
+      ~perception_frame.get_data_size
+      ~perception_frame.get_frame_metadata
+      ~perception_frame.get_frame_number
+      ~perception_frame.get_frame_timestamp_domain
+      ~perception_frame.get_gpu_data_or_upload
+      ~perception_frame.get_profile
+      ~perception_frame.get_timestamp
+      ~perception_frame.is_depth_frame
+      ~perception_frame.is_frame
+      ~perception_frame.is_frameset
+      ~perception_frame.is_gpu_frame
+      ~perception_frame.is_labeled_points
+      ~perception_frame.is_motion_frame
+      ~perception_frame.is_object_detection_frame
+      ~perception_frame.is_perception_frame
+      ~perception_frame.is_points
+      ~perception_frame.is_pose_frame
+      ~perception_frame.is_video_frame
+      ~perception_frame.keep
+      ~perception_frame.supports_frame_metadata
+      ~perception_frame.swap
+   
+   
+   
+   
+   
+   .. rubric:: Attributes
+   
+   .. autosummary::
+   
+      ~perception_frame.data
+      ~perception_frame.frame_number
+      ~perception_frame.frame_timestamp_domain
+      ~perception_frame.profile
+      ~perception_frame.timestamp
+   
+   

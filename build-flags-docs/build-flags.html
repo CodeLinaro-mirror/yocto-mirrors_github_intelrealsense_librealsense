@@ -8,7 +8,7 @@
 <body>
   <div class="container">
     <h1>RealSense SDK Build Customization Flags</h1>
-    <h2>Version 2.58.3.10794</h2>
+    <h2>Version 2.58.4.10922</h2>
     <table>
       <tr>
         <th style="width: 25%">Option</th>
@@ -36,6 +36,20 @@
 	</td>
 	<td>
 	  Enable CUDA
+	</td>
+	<td>
+	  <span style="color: #E74C3C;">OFF</span>
+	</td>
+	<td>
+	  <span style="color: #E74C3C;">NO</span>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <b><code>BUILD_WITH_CUDA_ZEROCOPY</code></b>
+	</td>
+	<td>
+	  Enable zero-copy GPU memory path (Jetson/integrated GPU only, requires BUILD_WITH_CUDA) <span style='font-style: italic; color: #666;'>Zero-copy GPU memory path (Jetson / integrated-GPU only). Requires BUILD_WITH_CUDA.Eliminates the per-frame CPU->frame copy (capture) and the GPU host<->device round-trips.Activates at runtime only on integrated GPUs; discrete GPUs keep the copy path. Default OFFso a plain CUDA build is byte-for-byte identical to today.</span>
 	</td>
 	<td>
 	  <span style="color: #E74C3C;">OFF</span>
@@ -610,6 +624,20 @@
 	</td>
 	<td>
 	  Use externally build LZ4 library instead of building and using the in this repo provided version
+	</td>
+	<td>
+	  <span style="color: #E74C3C;">OFF</span>
+	</td>
+	<td>
+	  <span style="color: #E74C3C;">NO</span>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <b><code>USE_EXTERNAL_NLOHMANN_JSON</code></b>
+	</td>
+	<td>
+	  Use an externally built nlohmann-json development package instead of downloading it as part of this build
 	</td>
 	<td>
 	  <span style="color: #E74C3C;">OFF</span>

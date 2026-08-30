@@ -100,12 +100,9 @@
       frame_metadata_value
       frame_queue
       frame_source
+      gpu_frame
       hdr_merge
       hole_filling_filter
-      inference_frame
-      inference_sensor
-      inference_stream
-      inference_stream_profile
       intrinsics
       ip_address
       l500_visual_preset
@@ -124,13 +121,16 @@
       notification_category
       object_detection
       object_detection_frame
-      object_detection_sensor
       option
       option_range
       option_type
       option_value
       options
       options_list
+      perception_frame
+      perception_sensor
+      perception_stream
+      perception_stream_profile
       pipeline
       pipeline_profile
       pipeline_wrapper

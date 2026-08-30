@@ -1,0 +1,68 @@
+pyrealsense2.gpu_frame
+======================
+
+.. currentmodule:: pyrealsense2
+
+.. autoclass:: gpu_frame
+   :members:
+   :undoc-members:
+
+   
+   .. automethod:: __init__
+   
+   
+   .. rubric:: Methods
+   
+   .. autosummary::
+   
+      ~gpu_frame.__init__
+      ~gpu_frame.as_depth_frame
+      ~gpu_frame.as_frame
+      ~gpu_frame.as_frameset
+      ~gpu_frame.as_gpu_frame
+      ~gpu_frame.as_labeled_points
+      ~gpu_frame.as_motion_frame
+      ~gpu_frame.as_object_detection_frame
+      ~gpu_frame.as_perception_frame
+      ~gpu_frame.as_points
+      ~gpu_frame.as_pose_frame
+      ~gpu_frame.as_video_frame
+      ~gpu_frame.get_data
+      ~gpu_frame.get_data_size
+      ~gpu_frame.get_frame_metadata
+      ~gpu_frame.get_frame_number
+      ~gpu_frame.get_frame_timestamp_domain
+      ~gpu_frame.get_gpu_data
+      ~gpu_frame.get_gpu_data_or_upload
+      ~gpu_frame.get_profile
+      ~gpu_frame.get_timestamp
+      ~gpu_frame.is_depth_frame
+      ~gpu_frame.is_frame
+      ~gpu_frame.is_frameset
+      ~gpu_frame.is_gpu_frame
+      ~gpu_frame.is_labeled_points
+      ~gpu_frame.is_motion_frame
+      ~gpu_frame.is_object_detection_frame
+      ~gpu_frame.is_perception_frame
+      ~gpu_frame.is_points
+      ~gpu_frame.is_pose_frame
+      ~gpu_frame.is_video_frame
+      ~gpu_frame.keep
+      ~gpu_frame.supports_frame_metadata
+      ~gpu_frame.swap
+   
+   
+   
+   
+   
+   .. rubric:: Attributes
+   
+   .. autosummary::
+   
+      ~gpu_frame.data
+      ~gpu_frame.frame_number
+      ~gpu_frame.frame_timestamp_domain
+      ~gpu_frame.profile
+      ~gpu_frame.timestamp
+   
+   

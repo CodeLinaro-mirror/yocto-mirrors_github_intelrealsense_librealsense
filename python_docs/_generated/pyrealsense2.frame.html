@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>pyrealsense2.frame &#8212; pyrealsense2 2.58.3 documentation</title>
+    <title>pyrealsense2.frame &#8212; pyrealsense2 2.58.4 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     
-    <script src="../_static/documentation_options.js?v=233a2e7e"></script>
+    <script src="../_static/documentation_options.js?v=e8b3beb3"></script>
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     
@@ -25,7 +25,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.4 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">pyrealsense2.frame</a></li> 
       </ul>
     </div>  
@@ -66,7 +66,7 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_frameset" title="pyrealsense2.frame.as_frameset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_frameset</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_inference_frame" title="pyrealsense2.frame.as_inference_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_inference_frame</span></code></a>(self)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_gpu_frame" title="pyrealsense2.frame.as_gpu_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_gpu_frame</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_labeled_points" title="pyrealsense2.frame.as_labeled_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_labeled_points</span></code></a>(self)</p></td>
@@ -78,29 +78,35 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_object_detection_frame" title="pyrealsense2.frame.as_object_detection_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_object_detection_frame</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_points" title="pyrealsense2.frame.as_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_points</span></code></a>(self)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_perception_frame" title="pyrealsense2.frame.as_perception_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_perception_frame</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_pose_frame" title="pyrealsense2.frame.as_pose_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_pose_frame</span></code></a>(self)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_points" title="pyrealsense2.frame.as_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_points</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_video_frame" title="pyrealsense2.frame.as_video_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_video_frame</span></code></a>(self)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_pose_frame" title="pyrealsense2.frame.as_pose_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_pose_frame</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_data" title="pyrealsense2.frame.get_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_data</span></code></a>(self)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.as_video_frame" title="pyrealsense2.frame.as_video_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_video_frame</span></code></a>(self)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_data" title="pyrealsense2.frame.get_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_data</span></code></a>(self)</p></td>
 <td><p>Retrieve data from the frame handle.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_data_size" title="pyrealsense2.frame.get_data_size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_data_size</span></code></a>(self)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_data_size" title="pyrealsense2.frame.get_data_size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_data_size</span></code></a>(self)</p></td>
 <td><p>Retrieve data size from frame handle.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_frame_metadata" title="pyrealsense2.frame.get_frame_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_frame_metadata</span></code></a>(self, frame_metadata)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_frame_metadata" title="pyrealsense2.frame.get_frame_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_frame_metadata</span></code></a>(self, frame_metadata)</p></td>
 <td><p>Retrieve the current value of a single frame_metadata.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_frame_number" title="pyrealsense2.frame.get_frame_number"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_frame_number</span></code></a>(self)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_frame_number" title="pyrealsense2.frame.get_frame_number"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_frame_number</span></code></a>(self)</p></td>
 <td><p>Retrieve the frame number.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_frame_timestamp_domain" title="pyrealsense2.frame.get_frame_timestamp_domain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_frame_timestamp_domain</span></code></a>(self)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_frame_timestamp_domain" title="pyrealsense2.frame.get_frame_timestamp_domain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_frame_timestamp_domain</span></code></a>(self)</p></td>
 <td><p>Retrieve the timestamp domain.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_gpu_data_or_upload" title="pyrealsense2.frame.get_gpu_data_or_upload"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_gpu_data_or_upload</span></code></a>(self)</p></td>
+<td><p>Always returns a usable CUDA device pointer on a CUDA build as a (address:int, copied:bool) tuple: zero-copy when available (copied=False), otherwise the SDK uploads to a cached device buffer (copied=True).</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.get_profile" title="pyrealsense2.frame.get_profile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_profile</span></code></a>(self)</p></td>
 <td><p>Retrieve stream profile from frame handle.</p></td>
@@ -117,7 +123,7 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_frameset" title="pyrealsense2.frame.is_frameset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_frameset</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_inference_frame" title="pyrealsense2.frame.is_inference_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_inference_frame</span></code></a>(self)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_gpu_frame" title="pyrealsense2.frame.is_gpu_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_gpu_frame</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_labeled_points" title="pyrealsense2.frame.is_labeled_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_labeled_points</span></code></a>(self)</p></td>
@@ -129,22 +135,25 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_object_detection_frame" title="pyrealsense2.frame.is_object_detection_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_object_detection_frame</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_points" title="pyrealsense2.frame.is_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_points</span></code></a>(self)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_perception_frame" title="pyrealsense2.frame.is_perception_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_perception_frame</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_pose_frame" title="pyrealsense2.frame.is_pose_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_pose_frame</span></code></a>(self)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_points" title="pyrealsense2.frame.is_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_points</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_video_frame" title="pyrealsense2.frame.is_video_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_video_frame</span></code></a>(self)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_pose_frame" title="pyrealsense2.frame.is_pose_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_pose_frame</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.keep" title="pyrealsense2.frame.keep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keep</span></code></a>(self)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.is_video_frame" title="pyrealsense2.frame.is_video_frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_video_frame</span></code></a>(self)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.keep" title="pyrealsense2.frame.keep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keep</span></code></a>(self)</p></td>
 <td><p>Keep the frame, otherwise if no refernce to the frame, the frame will be released.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.supports_frame_metadata" title="pyrealsense2.frame.supports_frame_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">supports_frame_metadata</span></code></a>(self, frame_metadata)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.supports_frame_metadata" title="pyrealsense2.frame.supports_frame_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">supports_frame_metadata</span></code></a>(self, frame_metadata)</p></td>
 <td><p>Determine if the device allows a specific metadata to be queried.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrealsense2.frame.swap" title="pyrealsense2.frame.swap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swap</span></code></a>(self, other)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyrealsense2.frame.swap" title="pyrealsense2.frame.swap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swap</span></code></a>(self, other)</p></td>
 <td><p>Swap the internal frame handle with the one in parameter</p></td>
 </tr>
 </tbody>
@@ -185,8 +194,8 @@
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pyrealsense2.frame.as_inference_frame">
-<span class="sig-name descname"><span class="pre">as_inference_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pyrealsense2.frame" title="pyrealsense2.frame"><span class="pre">pyrealsense2.frame</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rs2::inference_frame</span></span></span><a class="headerlink" href="#pyrealsense2.frame.as_inference_frame" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyrealsense2.frame.as_gpu_frame">
+<span class="sig-name descname"><span class="pre">as_gpu_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pyrealsense2.frame" title="pyrealsense2.frame"><span class="pre">pyrealsense2.frame</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rs2::gpu_frame</span></span></span><a class="headerlink" href="#pyrealsense2.frame.as_gpu_frame" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -202,6 +211,11 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrealsense2.frame.as_object_detection_frame">
 <span class="sig-name descname"><span class="pre">as_object_detection_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pyrealsense2.frame" title="pyrealsense2.frame"><span class="pre">pyrealsense2.frame</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rs2::object_detection_frame</span></span></span><a class="headerlink" href="#pyrealsense2.frame.as_object_detection_frame" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyrealsense2.frame.as_perception_frame">
+<span class="sig-name descname"><span class="pre">as_perception_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pyrealsense2.frame" title="pyrealsense2.frame"><span class="pre">pyrealsense2.frame</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rs2::perception_frame</span></span></span><a class="headerlink" href="#pyrealsense2.frame.as_perception_frame" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -268,6 +282,12 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="pyrealsense2.frame.get_gpu_data_or_upload">
+<span class="sig-name descname"><span class="pre">get_gpu_data_or_upload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pyrealsense2.frame" title="pyrealsense2.frame"><span class="pre">pyrealsense2.frame</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">object</span></span></span><a class="headerlink" href="#pyrealsense2.frame.get_gpu_data_or_upload" title="Link to this definition">¶</a></dt>
+<dd><p>Always returns a usable CUDA device pointer on a CUDA build as a (address:int, copied:bool) tuple: zero-copy when available (copied=False), otherwise the SDK uploads to a cached device buffer (copied=True). Returns None on non-CUDA builds. Consume the address via CuPy/PyCUDA/Numba/TensorRT; keep the frame alive until the GPU work completes.</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="pyrealsense2.frame.get_profile">
 <span class="sig-name descname"><span class="pre">get_profile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pyrealsense2.frame" title="pyrealsense2.frame"><span class="pre">pyrealsense2.frame</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="pyrealsense2.stream_profile.html#pyrealsense2.stream_profile" title="pyrealsense2.stream_profile"><span class="pre">pyrealsense2.stream_profile</span></a></span></span><a class="headerlink" href="#pyrealsense2.frame.get_profile" title="Link to this definition">¶</a></dt>
 <dd><p>Retrieve stream profile from frame handle.</p>
@@ -295,8 +315,8 @@
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pyrealsense2.frame.is_inference_frame">
-<span class="sig-name descname"><span class="pre">is_inference_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pyrealsense2.frame" title="pyrealsense2.frame"><span class="pre">pyrealsense2.frame</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pyrealsense2.frame.is_inference_frame" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pyrealsense2.frame.is_gpu_frame">
+<span class="sig-name descname"><span class="pre">is_gpu_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pyrealsense2.frame" title="pyrealsense2.frame"><span class="pre">pyrealsense2.frame</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pyrealsense2.frame.is_gpu_frame" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -312,6 +332,11 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrealsense2.frame.is_object_detection_frame">
 <span class="sig-name descname"><span class="pre">is_object_detection_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pyrealsense2.frame" title="pyrealsense2.frame"><span class="pre">pyrealsense2.frame</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pyrealsense2.frame.is_object_detection_frame" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyrealsense2.frame.is_perception_frame">
+<span class="sig-name descname"><span class="pre">is_perception_frame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pyrealsense2.frame" title="pyrealsense2.frame"><span class="pre">pyrealsense2.frame</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pyrealsense2.frame.is_perception_frame" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -379,10 +404,11 @@
 <li><a class="reference internal" href="#pyrealsense2.frame.as_depth_frame"><code class="docutils literal notranslate"><span class="pre">frame.as_depth_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.as_frame"><code class="docutils literal notranslate"><span class="pre">frame.as_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.as_frameset"><code class="docutils literal notranslate"><span class="pre">frame.as_frameset()</span></code></a></li>
-<li><a class="reference internal" href="#pyrealsense2.frame.as_inference_frame"><code class="docutils literal notranslate"><span class="pre">frame.as_inference_frame()</span></code></a></li>
+<li><a class="reference internal" href="#pyrealsense2.frame.as_gpu_frame"><code class="docutils literal notranslate"><span class="pre">frame.as_gpu_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.as_labeled_points"><code class="docutils literal notranslate"><span class="pre">frame.as_labeled_points()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.as_motion_frame"><code class="docutils literal notranslate"><span class="pre">frame.as_motion_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.as_object_detection_frame"><code class="docutils literal notranslate"><span class="pre">frame.as_object_detection_frame()</span></code></a></li>
+<li><a class="reference internal" href="#pyrealsense2.frame.as_perception_frame"><code class="docutils literal notranslate"><span class="pre">frame.as_perception_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.as_points"><code class="docutils literal notranslate"><span class="pre">frame.as_points()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.as_pose_frame"><code class="docutils literal notranslate"><span class="pre">frame.as_pose_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.as_video_frame"><code class="docutils literal notranslate"><span class="pre">frame.as_video_frame()</span></code></a></li>
@@ -394,15 +420,17 @@
 <li><a class="reference internal" href="#pyrealsense2.frame.get_frame_metadata"><code class="docutils literal notranslate"><span class="pre">frame.get_frame_metadata()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.get_frame_number"><code class="docutils literal notranslate"><span class="pre">frame.get_frame_number()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.get_frame_timestamp_domain"><code class="docutils literal notranslate"><span class="pre">frame.get_frame_timestamp_domain()</span></code></a></li>
+<li><a class="reference internal" href="#pyrealsense2.frame.get_gpu_data_or_upload"><code class="docutils literal notranslate"><span class="pre">frame.get_gpu_data_or_upload()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.get_profile"><code class="docutils literal notranslate"><span class="pre">frame.get_profile()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.get_timestamp"><code class="docutils literal notranslate"><span class="pre">frame.get_timestamp()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.is_depth_frame"><code class="docutils literal notranslate"><span class="pre">frame.is_depth_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.is_frame"><code class="docutils literal notranslate"><span class="pre">frame.is_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.is_frameset"><code class="docutils literal notranslate"><span class="pre">frame.is_frameset()</span></code></a></li>
-<li><a class="reference internal" href="#pyrealsense2.frame.is_inference_frame"><code class="docutils literal notranslate"><span class="pre">frame.is_inference_frame()</span></code></a></li>
+<li><a class="reference internal" href="#pyrealsense2.frame.is_gpu_frame"><code class="docutils literal notranslate"><span class="pre">frame.is_gpu_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.is_labeled_points"><code class="docutils literal notranslate"><span class="pre">frame.is_labeled_points()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.is_motion_frame"><code class="docutils literal notranslate"><span class="pre">frame.is_motion_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.is_object_detection_frame"><code class="docutils literal notranslate"><span class="pre">frame.is_object_detection_frame()</span></code></a></li>
+<li><a class="reference internal" href="#pyrealsense2.frame.is_perception_frame"><code class="docutils literal notranslate"><span class="pre">frame.is_perception_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.is_points"><code class="docutils literal notranslate"><span class="pre">frame.is_points()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.is_pose_frame"><code class="docutils literal notranslate"><span class="pre">frame.is_pose_frame()</span></code></a></li>
 <li><a class="reference internal" href="#pyrealsense2.frame.is_video_frame"><code class="docutils literal notranslate"><span class="pre">frame.is_video_frame()</span></code></a></li>
@@ -448,7 +476,7 @@
         <li class="right" >
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyrealsense2 2.58.4 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">pyrealsense2.frame</a></li> 
       </ul>
     </div>

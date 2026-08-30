@@ -31,9 +31,11 @@ pyrealsense2.firmware_logger
       ~firmware_logger.first_depth_sensor
       ~firmware_logger.first_fisheye_sensor
       ~firmware_logger.first_motion_sensor
+      ~firmware_logger.first_perception_sensor
       ~firmware_logger.first_pose_sensor
       ~firmware_logger.first_roi_sensor
       ~firmware_logger.first_safety_sensor
+      ~firmware_logger.get_device_time_ms
       ~firmware_logger.get_firmware_log
       ~firmware_logger.get_firmware_min_version
       ~firmware_logger.get_flash_log

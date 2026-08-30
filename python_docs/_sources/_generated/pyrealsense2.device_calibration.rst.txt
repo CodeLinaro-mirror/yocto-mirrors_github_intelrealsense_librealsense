@@ -29,9 +29,11 @@ pyrealsense2.device_calibration
       ~device_calibration.first_depth_sensor
       ~device_calibration.first_fisheye_sensor
       ~device_calibration.first_motion_sensor
+      ~device_calibration.first_perception_sensor
       ~device_calibration.first_pose_sensor
       ~device_calibration.first_roi_sensor
       ~device_calibration.first_safety_sensor
+      ~device_calibration.get_device_time_ms
       ~device_calibration.get_firmware_min_version
       ~device_calibration.get_info
       ~device_calibration.hardware_reset

@@ -4,11 +4,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; pyrealsense2 2.58.3 documentation</title>
+    <title>Index &#8212; pyrealsense2 2.58.4 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
     
-    <script src="_static/documentation_options.js?v=233a2e7e"></script>
+    <script src="_static/documentation_options.js?v=e8b3beb3"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     
@@ -24,7 +24,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">pyrealsense2 2.58.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pyrealsense2 2.58.4 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Index</a></li> 
       </ul>
     </div>  
@@ -166,17 +166,11 @@
 </li>
         <li><a href="_generated/pyrealsense2.frame_source.html#pyrealsense2.frame_source.__init__">(pyrealsense2.frame_source method)</a>
 </li>
+        <li><a href="_generated/pyrealsense2.gpu_frame.html#pyrealsense2.gpu_frame.__init__">(pyrealsense2.gpu_frame method)</a>
+</li>
         <li><a href="_generated/pyrealsense2.hdr_merge.html#pyrealsense2.hdr_merge.__init__">(pyrealsense2.hdr_merge method)</a>
 </li>
         <li><a href="_generated/pyrealsense2.hole_filling_filter.html#pyrealsense2.hole_filling_filter.__init__">(pyrealsense2.hole_filling_filter method)</a>
-</li>
-        <li><a href="_generated/pyrealsense2.inference_frame.html#pyrealsense2.inference_frame.__init__">(pyrealsense2.inference_frame method)</a>
-</li>
-        <li><a href="_generated/pyrealsense2.inference_sensor.html#pyrealsense2.inference_sensor.__init__">(pyrealsense2.inference_sensor method)</a>
-</li>
-        <li><a href="_generated/pyrealsense2.inference_stream.html#pyrealsense2.inference_stream.__init__">(pyrealsense2.inference_stream method)</a>
-</li>
-        <li><a href="_generated/pyrealsense2.inference_stream_profile.html#pyrealsense2.inference_stream_profile.__init__">(pyrealsense2.inference_stream_profile method)</a>
 </li>
         <li><a href="_generated/pyrealsense2.intrinsics.html#pyrealsense2.intrinsics.__init__">(pyrealsense2.intrinsics method)</a>
 </li>
@@ -214,8 +208,6 @@
 </li>
         <li><a href="_generated/pyrealsense2.object_detection_frame.html#pyrealsense2.object_detection_frame.__init__">(pyrealsense2.object_detection_frame method)</a>
 </li>
-        <li><a href="_generated/pyrealsense2.object_detection_sensor.html#pyrealsense2.object_detection_sensor.__init__">(pyrealsense2.object_detection_sensor method)</a>
-</li>
         <li><a href="_generated/pyrealsense2.option.html#pyrealsense2.option.__init__">(pyrealsense2.option method)</a>
 </li>
         <li><a href="_generated/pyrealsense2.option_range.html#pyrealsense2.option_range.__init__">(pyrealsense2.option_range method)</a>
@@ -227,6 +219,14 @@
         <li><a href="_generated/pyrealsense2.options.html#pyrealsense2.options.__init__">(pyrealsense2.options method)</a>
 </li>
         <li><a href="_generated/pyrealsense2.options_list.html#pyrealsense2.options_list.__init__">(pyrealsense2.options_list method)</a>
+</li>
+        <li><a href="_generated/pyrealsense2.perception_frame.html#pyrealsense2.perception_frame.__init__">(pyrealsense2.perception_frame method)</a>
+</li>
+        <li><a href="_generated/pyrealsense2.perception_sensor.html#pyrealsense2.perception_sensor.__init__">(pyrealsense2.perception_sensor method)</a>
+</li>
+        <li><a href="_generated/pyrealsense2.perception_stream.html#pyrealsense2.perception_stream.__init__">(pyrealsense2.perception_stream method)</a>
+</li>
+        <li><a href="_generated/pyrealsense2.perception_stream_profile.html#pyrealsense2.perception_stream_profile.__init__">(pyrealsense2.perception_stream_profile method)</a>
 </li>
         <li><a href="_generated/pyrealsense2.pipeline.html#pyrealsense2.pipeline.__init__">(pyrealsense2.pipeline method)</a>
 </li>
@@ -379,11 +379,11 @@
 </li>
       <li><a href="_generated/pyrealsense2.frame_metadata_value.html#pyrealsense2.frame_metadata_value.actual_fps">actual_fps (pyrealsense2.frame_metadata_value attribute)</a>
 </li>
-      <li><a href="_generated/pyrealsense2.software_sensor.html#pyrealsense2.software_sensor.add_inference_stream">add_inference_stream() (pyrealsense2.software_sensor method)</a>
-</li>
       <li><a href="_generated/pyrealsense2.software_sensor.html#pyrealsense2.software_sensor.add_motion_stream">add_motion_stream() (pyrealsense2.software_sensor method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.software_sensor.html#pyrealsense2.software_sensor.add_option">add_option() (pyrealsense2.software_sensor method)</a>
+</li>
+      <li><a href="_generated/pyrealsense2.software_sensor.html#pyrealsense2.software_sensor.add_perception_stream">add_perception_stream() (pyrealsense2.software_sensor method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.software_sensor.html#pyrealsense2.software_sensor.add_pose_stream">add_pose_stream() (pyrealsense2.software_sensor method)</a>
 </li>
@@ -469,15 +469,11 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.as_gpu_frame">as_gpu_frame() (pyrealsense2.frame method)</a>
+</li>
       <li><a href="_generated/pyrealsense2.filter.html#pyrealsense2.filter.as_hdr_merge">as_hdr_merge() (pyrealsense2.filter method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.filter.html#pyrealsense2.filter.as_hole_filling_filter">as_hole_filling_filter() (pyrealsense2.filter method)</a>
-</li>
-      <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.as_inference_frame">as_inference_frame() (pyrealsense2.frame method)</a>
-</li>
-      <li><a href="_generated/pyrealsense2.sensor.html#pyrealsense2.sensor.as_inference_sensor">as_inference_sensor() (pyrealsense2.sensor method)</a>
-</li>
-      <li><a href="_generated/pyrealsense2.stream_profile.html#pyrealsense2.stream_profile.as_inference_stream_profile">as_inference_stream_profile() (pyrealsense2.stream_profile method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.as_labeled_points">as_labeled_points() (pyrealsense2.frame method)</a>
 </li>
@@ -491,7 +487,11 @@
 </li>
       <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.as_object_detection_frame">as_object_detection_frame() (pyrealsense2.frame method)</a>
 </li>
-      <li><a href="_generated/pyrealsense2.sensor.html#pyrealsense2.sensor.as_object_detection_sensor">as_object_detection_sensor() (pyrealsense2.sensor method)</a>
+      <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.as_perception_frame">as_perception_frame() (pyrealsense2.frame method)</a>
+</li>
+      <li><a href="_generated/pyrealsense2.sensor.html#pyrealsense2.sensor.as_perception_sensor">as_perception_sensor() (pyrealsense2.sensor method)</a>
+</li>
+      <li><a href="_generated/pyrealsense2.stream_profile.html#pyrealsense2.stream_profile.as_perception_stream_profile">as_perception_stream_profile() (pyrealsense2.stream_profile method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.device.html#pyrealsense2.device.as_playback">as_playback() (pyrealsense2.device method)</a>
 </li>
@@ -905,6 +905,8 @@
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/pyrealsense2.option.html#pyrealsense2.option.detection_distance">detection_distance (pyrealsense2.option attribute)</a>
+</li>
       <li><a href="_generated/pyrealsense2.device.html#pyrealsense2.device">device (class in pyrealsense2)</a>
 </li>
       <li><a href="_generated/pyrealsense2.device_calibration.html#pyrealsense2.device_calibration">device_calibration (class in pyrealsense2)</a>
@@ -1171,6 +1173,8 @@
 </li>
       <li><a href="_generated/pyrealsense2.composite_frame.html#pyrealsense2.composite_frame.first_or_default">first_or_default() (pyrealsense2.composite_frame method)</a>
 </li>
+      <li><a href="_generated/pyrealsense2.device.html#pyrealsense2.device.first_perception_sensor">first_perception_sensor() (pyrealsense2.device method)</a>
+</li>
       <li><a href="_generated/pyrealsense2.device.html#pyrealsense2.device.first_pose_sensor">first_pose_sensor() (pyrealsense2.device method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.device.html#pyrealsense2.device.first_roi_sensor">first_roi_sensor() (pyrealsense2.device method)</a>
@@ -1193,10 +1197,10 @@
 </li>
       <li><a href="_generated/pyrealsense2.frame_metadata_value.html#pyrealsense2.frame_metadata_value.floor_detection">floor_detection (pyrealsense2.frame_metadata_value attribute)</a>
 </li>
-      <li><a href="_generated/pyrealsense2.inference_stream.html#pyrealsense2.inference_stream.fmt">fmt (pyrealsense2.inference_stream property)</a>
+      <li><a href="_generated/pyrealsense2.motion_stream.html#pyrealsense2.motion_stream.fmt">fmt (pyrealsense2.motion_stream property)</a>
 
       <ul>
-        <li><a href="_generated/pyrealsense2.motion_stream.html#pyrealsense2.motion_stream.fmt">(pyrealsense2.motion_stream property)</a>
+        <li><a href="_generated/pyrealsense2.perception_stream.html#pyrealsense2.perception_stream.fmt">(pyrealsense2.perception_stream property)</a>
 </li>
         <li><a href="_generated/pyrealsense2.pose_stream.html#pyrealsense2.pose_stream.fmt">(pyrealsense2.pose_stream property)</a>
 </li>
@@ -1211,10 +1215,10 @@
 </li>
       <li><a href="_generated/pyrealsense2.stream_profile.html#pyrealsense2.stream_profile.format">format() (pyrealsense2.stream_profile method)</a>
 </li>
-      <li><a href="_generated/pyrealsense2.inference_stream.html#pyrealsense2.inference_stream.fps">fps (pyrealsense2.inference_stream property)</a>
+      <li><a href="_generated/pyrealsense2.motion_stream.html#pyrealsense2.motion_stream.fps">fps (pyrealsense2.motion_stream property)</a>
 
       <ul>
-        <li><a href="_generated/pyrealsense2.motion_stream.html#pyrealsense2.motion_stream.fps">(pyrealsense2.motion_stream property)</a>
+        <li><a href="_generated/pyrealsense2.perception_stream.html#pyrealsense2.perception_stream.fps">(pyrealsense2.perception_stream property)</a>
 </li>
         <li><a href="_generated/pyrealsense2.pose_stream.html#pyrealsense2.pose_stream.fps">(pyrealsense2.pose_stream property)</a>
 </li>
@@ -1359,6 +1363,8 @@
 </li>
       <li><a href="_generated/pyrealsense2.pipeline_profile.html#pyrealsense2.pipeline_profile.get_device">get_device() (pyrealsense2.pipeline_profile method)</a>
 </li>
+      <li><a href="_generated/pyrealsense2.device.html#pyrealsense2.device.get_device_time_ms">get_device_time_ms() (pyrealsense2.device method)</a>
+</li>
       <li><a href="_generated/pyrealsense2.eth_config_device.html#pyrealsense2.eth_config_device.get_dhcp_config">get_dhcp_config() (pyrealsense2.eth_config_device method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.depth_frame.html#pyrealsense2.depth_frame.get_distance">get_distance() (pyrealsense2.depth_frame method)</a>
@@ -1393,6 +1399,10 @@
 </li>
       <li><a href="_generated/pyrealsense2.eth_config_device.html#pyrealsense2.eth_config_device.get_gateway">get_gateway() (pyrealsense2.eth_config_device method)</a>
 </li>
+      <li><a href="_generated/pyrealsense2.gpu_frame.html#pyrealsense2.gpu_frame.get_gpu_data">get_gpu_data() (pyrealsense2.gpu_frame method)</a>
+</li>
+      <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.get_gpu_data_or_upload">get_gpu_data_or_upload() (pyrealsense2.frame method)</a>
+</li>
       <li><a href="_generated/pyrealsense2.rs400_advanced_mode.html#pyrealsense2.rs400_advanced_mode.get_hdad">get_hdad() (pyrealsense2.rs400_advanced_mode method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.labeled_points.html#pyrealsense2.labeled_points.get_height">get_height() (pyrealsense2.labeled_points method)</a>
@@ -1423,10 +1433,10 @@
 </li>
       <li><a href="_generated/pyrealsense2.eth_config_device.html#pyrealsense2.eth_config_device.get_link_priority">get_link_priority() (pyrealsense2.eth_config_device method)</a>
 </li>
-      <li><a href="_generated/pyrealsense2.eth_config_device.html#pyrealsense2.eth_config_device.get_link_speed">get_link_speed() (pyrealsense2.eth_config_device method)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/pyrealsense2.eth_config_device.html#pyrealsense2.eth_config_device.get_link_speed">get_link_speed() (pyrealsense2.eth_config_device method)</a>
+</li>
       <li><a href="_generated/pyrealsense2.eth_config_device.html#pyrealsense2.eth_config_device.get_link_timeout">get_link_timeout() (pyrealsense2.eth_config_device method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.max_usable_range_sensor.html#pyrealsense2.max_usable_range_sensor.get_max_usable_depth_range">get_max_usable_depth_range() (pyrealsense2.max_usable_range_sensor method)</a>
@@ -1563,6 +1573,12 @@
 </li>
       <li><a href="_generated/pyrealsense2.format.html#pyrealsense2.format.gpio_raw">gpio_raw (pyrealsense2.format attribute)</a>
 </li>
+      <li><a href="_generated/pyrealsense2.gpu_frame.html#pyrealsense2.gpu_frame">gpu_frame (class in pyrealsense2)</a>
+
+      <ul>
+        <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.gpu_frame">(pyrealsense2.extension attribute)</a>
+</li>
+      </ul></li>
       <li><a href="_generated/pyrealsense2.stream.html#pyrealsense2.stream.gyro">gyro (pyrealsense2.stream attribute)</a>
 </li>
       <li><a href="_generated/pyrealsense2.option.html#pyrealsense2.option.gyro_sensitivity">gyro_sensitivity (pyrealsense2.option attribute)</a>
@@ -1647,34 +1663,16 @@
 </li>
       <li><a href="_generated/pyrealsense2.camera_info.html#pyrealsense2.camera_info.imu_type">imu_type (pyrealsense2.camera_info attribute)</a>
 </li>
-      <li><a href="_generated/pyrealsense2.inference_stream.html#pyrealsense2.inference_stream.index">index (pyrealsense2.inference_stream property)</a>
+      <li><a href="_generated/pyrealsense2.motion_stream.html#pyrealsense2.motion_stream.index">index (pyrealsense2.motion_stream property)</a>
 
       <ul>
-        <li><a href="_generated/pyrealsense2.motion_stream.html#pyrealsense2.motion_stream.index">(pyrealsense2.motion_stream property)</a>
+        <li><a href="_generated/pyrealsense2.perception_stream.html#pyrealsense2.perception_stream.index">(pyrealsense2.perception_stream property)</a>
 </li>
         <li><a href="_generated/pyrealsense2.pose_stream.html#pyrealsense2.pose_stream.index">(pyrealsense2.pose_stream property)</a>
 </li>
         <li><a href="_generated/pyrealsense2.video_stream.html#pyrealsense2.video_stream.index">(pyrealsense2.video_stream property)</a>
 </li>
       </ul></li>
-      <li><a href="_generated/pyrealsense2.inference_frame.html#pyrealsense2.inference_frame">inference_frame (class in pyrealsense2)</a>
-
-      <ul>
-        <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.inference_frame">(pyrealsense2.extension attribute)</a>
-</li>
-      </ul></li>
-      <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.inference_profile">inference_profile (pyrealsense2.extension attribute)</a>
-</li>
-      <li><a href="_generated/pyrealsense2.inference_sensor.html#pyrealsense2.inference_sensor">inference_sensor (class in pyrealsense2)</a>
-
-      <ul>
-        <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.inference_sensor">(pyrealsense2.extension attribute)</a>
-</li>
-      </ul></li>
-      <li><a href="_generated/pyrealsense2.inference_stream.html#pyrealsense2.inference_stream">inference_stream (class in pyrealsense2)</a>
-</li>
-      <li><a href="_generated/pyrealsense2.inference_stream_profile.html#pyrealsense2.inference_stream_profile">inference_stream_profile (class in pyrealsense2)</a>
-</li>
       <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.info">info (pyrealsense2.extension attribute)</a>
 
       <ul>
@@ -1741,8 +1739,6 @@
 </li>
       <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.is_depth_frame">is_depth_frame() (pyrealsense2.frame method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_generated/pyrealsense2.sensor.html#pyrealsense2.sensor.is_depth_sensor">is_depth_sensor() (pyrealsense2.sensor method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.device.html#pyrealsense2.device.is_device_calibration">is_device_calibration() (pyrealsense2.device method)</a>
@@ -1751,6 +1747,8 @@
 </li>
       <li><a href="_generated/pyrealsense2.embedded_filter.html#pyrealsense2.embedded_filter.is_embedded_decimation_filter">is_embedded_decimation_filter() (pyrealsense2.embedded_filter method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_generated/pyrealsense2.embedded_filter.html#pyrealsense2.embedded_filter.is_embedded_temporal_filter">is_embedded_temporal_filter() (pyrealsense2.embedded_filter method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.rs400_advanced_mode.html#pyrealsense2.rs400_advanced_mode.is_enabled">is_enabled() (pyrealsense2.rs400_advanced_mode method)</a>
@@ -1763,17 +1761,13 @@
 </li>
       <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.is_frameset">is_frameset() (pyrealsense2.frame method)</a>
 </li>
+      <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.is_gpu_frame">is_gpu_frame() (pyrealsense2.frame method)</a>
+</li>
       <li><a href="_generated/pyrealsense2.filter.html#pyrealsense2.filter.is_hdr_merge">is_hdr_merge() (pyrealsense2.filter method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.filter.html#pyrealsense2.filter.is_hole_filling_filter">is_hole_filling_filter() (pyrealsense2.filter method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.device.html#pyrealsense2.device.is_in_recovery_mode">is_in_recovery_mode() (pyrealsense2.device method)</a>
-</li>
-      <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.is_inference_frame">is_inference_frame() (pyrealsense2.frame method)</a>
-</li>
-      <li><a href="_generated/pyrealsense2.sensor.html#pyrealsense2.sensor.is_inference_sensor">is_inference_sensor() (pyrealsense2.sensor method)</a>
-</li>
-      <li><a href="_generated/pyrealsense2.stream_profile.html#pyrealsense2.stream_profile.is_inference_stream_profile">is_inference_stream_profile() (pyrealsense2.stream_profile method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.is_labeled_points">is_labeled_points() (pyrealsense2.frame method)</a>
 </li>
@@ -1789,9 +1783,13 @@
 </li>
       <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.is_object_detection_frame">is_object_detection_frame() (pyrealsense2.frame method)</a>
 </li>
-      <li><a href="_generated/pyrealsense2.sensor.html#pyrealsense2.sensor.is_object_detection_sensor">is_object_detection_sensor() (pyrealsense2.sensor method)</a>
-</li>
       <li><a href="_generated/pyrealsense2.options.html#pyrealsense2.options.is_option_read_only">is_option_read_only() (pyrealsense2.options method)</a>
+</li>
+      <li><a href="_generated/pyrealsense2.frame.html#pyrealsense2.frame.is_perception_frame">is_perception_frame() (pyrealsense2.frame method)</a>
+</li>
+      <li><a href="_generated/pyrealsense2.sensor.html#pyrealsense2.sensor.is_perception_sensor">is_perception_sensor() (pyrealsense2.sensor method)</a>
+</li>
+      <li><a href="_generated/pyrealsense2.stream_profile.html#pyrealsense2.stream_profile.is_perception_stream_profile">is_perception_stream_profile() (pyrealsense2.stream_profile method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.device.html#pyrealsense2.device.is_playback">is_playback() (pyrealsense2.device method)</a>
 </li>
@@ -2088,12 +2086,6 @@
         <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.object_detection_frame">(pyrealsense2.extension attribute)</a>
 </li>
       </ul></li>
-      <li><a href="_generated/pyrealsense2.object_detection_sensor.html#pyrealsense2.object_detection_sensor">object_detection_sensor (class in pyrealsense2)</a>
-
-      <ul>
-        <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.object_detection_sensor">(pyrealsense2.extension attribute)</a>
-</li>
-      </ul></li>
       <li><a href="_generated/pyrealsense2.stream.html#pyrealsense2.stream.occupancy">occupancy (pyrealsense2.stream attribute)</a>
 </li>
       <li><a href="_generated/pyrealsense2.frame_metadata_value.html#pyrealsense2.frame_metadata_value.occupancy_cell_size">occupancy_cell_size (pyrealsense2.frame_metadata_value attribute)</a>
@@ -2112,10 +2104,10 @@
 </li>
       <li><a href="_generated/pyrealsense2.software_sensor.html#pyrealsense2.software_sensor.on_pose_frame">on_pose_frame() (pyrealsense2.software_sensor method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_generated/pyrealsense2.software_sensor.html#pyrealsense2.software_sensor.on_video_frame">on_video_frame() (pyrealsense2.software_sensor method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_generated/pyrealsense2.sensor.html#pyrealsense2.sensor.open">open() (pyrealsense2.sensor method)</a>
 </li>
       <li><a href="_generated/pyrealsense2.option.html#pyrealsense2.option">option (class in pyrealsense2)</a>
@@ -2165,6 +2157,24 @@
 </li>
       </ul></li>
       <li><a href="_generated/pyrealsense2.playback_status.html#pyrealsense2.playback_status.paused">paused (pyrealsense2.playback_status attribute)</a>
+</li>
+      <li><a href="_generated/pyrealsense2.perception_frame.html#pyrealsense2.perception_frame">perception_frame (class in pyrealsense2)</a>
+
+      <ul>
+        <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.perception_frame">(pyrealsense2.extension attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.perception_profile">perception_profile (pyrealsense2.extension attribute)</a>
+</li>
+      <li><a href="_generated/pyrealsense2.perception_sensor.html#pyrealsense2.perception_sensor">perception_sensor (class in pyrealsense2)</a>
+
+      <ul>
+        <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.perception_sensor">(pyrealsense2.extension attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/pyrealsense2.perception_stream.html#pyrealsense2.perception_stream">perception_stream (class in pyrealsense2)</a>
+</li>
+      <li><a href="_generated/pyrealsense2.perception_stream_profile.html#pyrealsense2.perception_stream_profile">perception_stream_profile (class in pyrealsense2)</a>
 </li>
       <li><a href="_generated/pyrealsense2.camera_info.html#pyrealsense2.camera_info.physical_port">physical_port (pyrealsense2.camera_info attribute)</a>
 </li>
@@ -2218,6 +2228,8 @@
         <li><a href="_generated/pyrealsense2.stream.html#pyrealsense2.stream.pose">(pyrealsense2.stream attribute)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_generated/pyrealsense2.pose_frame.html#pyrealsense2.pose_frame.pose_data">pose_data (pyrealsense2.pose_frame property)</a>
 </li>
       <li><a href="_generated/pyrealsense2.pose_frame.html#pyrealsense2.pose_frame">pose_frame (class in pyrealsense2)</a>
@@ -2226,8 +2238,6 @@
         <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.pose_frame">(pyrealsense2.extension attribute)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_generated/pyrealsense2.extension.html#pyrealsense2.extension.pose_profile">pose_profile (pyrealsense2.extension attribute)</a>
 </li>
       <li><a href="_generated/pyrealsense2.notification_category.html#pyrealsense2.notification_category.pose_relocalization">pose_relocalization (pyrealsense2.notification_category attribute)</a>
@@ -2340,6 +2350,8 @@
       <li><a href="_generated/pyrealsense2.format.html#pyrealsense2.format.raw8">raw8 (pyrealsense2.format attribute)</a>
 </li>
       <li><a href="_generated/pyrealsense2.frame_metadata_value.html#pyrealsense2.frame_metadata_value.raw_frame_size">raw_frame_size (pyrealsense2.frame_metadata_value attribute)</a>
+</li>
+      <li><a href="_generated/pyrealsense2.option.html#pyrealsense2.option.readout_shaping">readout_shaping (pyrealsense2.option attribute)</a>
 </li>
       <li><a href="_generated/pyrealsense2.option.html#pyrealsense2.option.receiver_gain">receiver_gain (pyrealsense2.option attribute)</a>
 </li>
@@ -2609,6 +2621,8 @@
         <li><a href="_generated/pyrealsense2.device.html#pyrealsense2.device.sensors">(pyrealsense2.device property)</a>
 </li>
       </ul></li>
+      <li><a href="_generated/pyrealsense2.option.html#pyrealsense2.option.sensors_config_mode">sensors_config_mode (pyrealsense2.option attribute)</a>
+</li>
       <li><a href="_generated/pyrealsense2.frame_metadata_value.html#pyrealsense2.frame_metadata_value.sequence_id">sequence_id (pyrealsense2.frame_metadata_value attribute)</a>
 
       <ul>
@@ -3017,12 +3031,12 @@
         <li><a href="_generated/pyrealsense2.syncer.html#pyrealsense2.syncer.try_wait_for_frames">(pyrealsense2.syncer method)</a>
 </li>
       </ul></li>
-      <li><a href="_generated/pyrealsense2.inference_stream.html#pyrealsense2.inference_stream.type">type (pyrealsense2.inference_stream property)</a>
+      <li><a href="_generated/pyrealsense2.motion_stream.html#pyrealsense2.motion_stream.type">type (pyrealsense2.motion_stream property)</a>
 
       <ul>
-        <li><a href="_generated/pyrealsense2.motion_stream.html#pyrealsense2.motion_stream.type">(pyrealsense2.motion_stream property)</a>
-</li>
         <li><a href="_generated/pyrealsense2.option_value.html#pyrealsense2.option_value.type">(pyrealsense2.option_value property)</a>
+</li>
+        <li><a href="_generated/pyrealsense2.perception_stream.html#pyrealsense2.perception_stream.type">(pyrealsense2.perception_stream property)</a>
 </li>
         <li><a href="_generated/pyrealsense2.pose_stream.html#pyrealsense2.pose_stream.type">(pyrealsense2.pose_stream property)</a>
 </li>
@@ -3041,10 +3055,10 @@
 </li>
       <li><a href="_generated/pyrealsense2.STCensusRadius.html#pyrealsense2.STCensusRadius.uDiameter">uDiameter (pyrealsense2.STCensusRadius property)</a>
 </li>
-      <li><a href="_generated/pyrealsense2.inference_stream.html#pyrealsense2.inference_stream.uid">uid (pyrealsense2.inference_stream property)</a>
+      <li><a href="_generated/pyrealsense2.motion_stream.html#pyrealsense2.motion_stream.uid">uid (pyrealsense2.motion_stream property)</a>
 
       <ul>
-        <li><a href="_generated/pyrealsense2.motion_stream.html#pyrealsense2.motion_stream.uid">(pyrealsense2.motion_stream property)</a>
+        <li><a href="_generated/pyrealsense2.perception_stream.html#pyrealsense2.perception_stream.uid">(pyrealsense2.perception_stream property)</a>
 </li>
         <li><a href="_generated/pyrealsense2.pose_stream.html#pyrealsense2.pose_stream.uid">(pyrealsense2.pose_stream property)</a>
 </li>
@@ -3377,7 +3391,7 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">pyrealsense2 2.58.3 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pyrealsense2 2.58.4 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Index</a></li> 
       </ul>
     </div>

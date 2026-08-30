@@ -93,6 +93,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a16354267951fae7816da7ee8ce58141f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab90ad91fe37278faa5e2a1835c4c9d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#aab90ad91fe37278faa5e2a1835c4c9d8">is_in_recovery_mode</a> ()</td></tr>
 <tr class="separator:aab90ad91fe37278faa5e2a1835c4c9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6acca0e01800e1aa3df8a23e69ecdcf8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a6acca0e01800e1aa3df8a23e69ecdcf8">get_device_time_ms</a> () const</td></tr>
+<tr class="separator:a6acca0e01800e1aa3df8a23e69ecdcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd3dd84c4a678efd0337233683433523"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1device.html">device</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#acd3dd84c4a678efd0337233683433523">operator=</a> (const std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> &gt; dev)</td></tr>
 <tr class="separator:acd3dd84c4a678efd0337233683433523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64271f278e0ea4aa3c6aa8515a5b4352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrs2_1_1device.html">device</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1device.html#a64271f278e0ea4aa3c6aa8515a5b4352">operator=</a> (const <a class="el" href="classrs2_1_1device.html">device</a> &amp;dev)</td></tr>
@@ -318,6 +320,38 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the one-line description: "[&lt;type&gt;] &lt;name&gt; s/n &lt;#&gt;" </dd></dl>
+
+</div>
+</div>
+<a id="a6acca0e01800e1aa3df8a23e69ecdcf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6acca0e01800e1aa3df8a23e69ecdcf8">&#9670;&nbsp;</a></span>get_device_time_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double rs2::device::get_device_time_ms </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieve the current device hardware clock time. </p><dl class="section note"><dt>Note</dt><dd>Raw ASIC clock, NOT host time and NOT the frame's global-time domain. </dd>
+<dd>
+Underlying counter is 32-bit microseconds — wraps roughly every 71.6 min. </dd>
+<dd>
+Each call is a blocking hardware-monitor round-trip (few ms); do not poll per frame. </dd>
+<dd>
+Not supported on every device/backend; throws if the device lacks RS2_EXTENSION_GLOBAL_TIMER. </dd></dl>
 
 </div>
 </div>

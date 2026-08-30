@@ -31,9 +31,11 @@ pyrealsense2.playback
       ~playback.first_depth_sensor
       ~playback.first_fisheye_sensor
       ~playback.first_motion_sensor
+      ~playback.first_perception_sensor
       ~playback.first_pose_sensor
       ~playback.first_roi_sensor
       ~playback.first_safety_sensor
+      ~playback.get_device_time_ms
       ~playback.get_duration
       ~playback.get_firmware_min_version
       ~playback.get_info

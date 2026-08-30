@@ -49,11 +49,9 @@ pyrealsense2.extension
       ~extension.fisheye_sensor
       ~extension.fw_logger
       ~extension.global_timer
+      ~extension.gpu_frame
       ~extension.hdr_merge
       ~extension.hole_filling_filter
-      ~extension.inference_frame
-      ~extension.inference_profile
-      ~extension.inference_sensor
       ~extension.info
       ~extension.l500_depth_sensor
       ~extension.labeled_points
@@ -64,8 +62,10 @@ pyrealsense2.extension
       ~extension.motion_sensor
       ~extension.name
       ~extension.object_detection_frame
-      ~extension.object_detection_sensor
       ~extension.options
+      ~extension.perception_frame
+      ~extension.perception_profile
+      ~extension.perception_sensor
       ~extension.playback
       ~extension.points
       ~extension.pose

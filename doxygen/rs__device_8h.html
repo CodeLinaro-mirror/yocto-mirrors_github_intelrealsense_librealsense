@@ -215,6 +215,8 @@ Functions</h2></td></tr>
 <tr class="separator:a518cddd2a93e2dd802614ff75796bdc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08e3caf61174333d2c325c390a5c3a26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a08e3caf61174333d2c325c390a5c3a26">rs2_set_calibration_config</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, const char *calibration_config_json_str, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a08e3caf61174333d2c325c390a5c3a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9e0acd7efced7dbfe3d77a14e686f8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a3a9e0acd7efced7dbfe3d77a14e686f8">rs2_get_device_time_ms</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a3a9e0acd7efced7dbfe3d77a14e686f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exposes RealSense device functionality for C compilers. </p>
@@ -1219,6 +1221,49 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The requested camera info string, in a format specific to the device model </dd></dl>
+
+</div>
+</div>
+<a id="a3a9e0acd7efced7dbfe3d77a14e686f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a9e0acd7efced7dbfe3d77a14e686f8">&#9670;&nbsp;</a></span>rs2_get_device_time_ms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double rs2_get_device_time_ms </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieve the current device hardware clock time. </p><dl class="section note"><dt>Note</dt><dd>Raw ASIC clock, NOT host time and NOT the frame's global-time domain. </dd>
+<dd>
+Underlying counter is 32-bit microseconds — wraps roughly every 71.6 min. </dd>
+<dd>
+Each call is a blocking hardware-monitor round-trip (few ms); do not poll per frame. </dd>
+<dd>
+Not supported on every device/backend; errors if the device lacks RS2_EXTENSION_GLOBAL_TIMER. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>The RealSense device </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Device hardware time in milliseconds </dd></dl>
 
 </div>
 </div>

@@ -366,20 +366,14 @@ $(function() {
 <li>RS2_EXTENSION_GLOBAL_TIMER
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aad2814254defb10cb44b1c189e3eac211">rs_types.h</a>
 </li>
+<li>RS2_EXTENSION_GPU_FRAME
+: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa93117da51a73fafec96deb688415176c">rs_types.h</a>
+</li>
 <li>RS2_EXTENSION_HDR_MERGE
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa08c5658e1c511432fc2abaa037b8372c">rs_types.h</a>
 </li>
 <li>RS2_EXTENSION_HOLE_FILLING_FILTER
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa101bf1e5d8dae9ea3e094f3f2431ef39">rs_types.h</a>
-</li>
-<li>RS2_EXTENSION_INFERENCE_FRAME
-: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aadb1cf457414858731289907e2bba09d4">rs_types.h</a>
-</li>
-<li>RS2_EXTENSION_INFERENCE_PROFILE
-: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa86b64b3e214b99dfaee1f517a72ec64e">rs_types.h</a>
-</li>
-<li>RS2_EXTENSION_INFERENCE_SENSOR
-: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa8cddfbce1a183915c493a0c124661a03">rs_types.h</a>
 </li>
 <li>RS2_EXTENSION_INFO
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa040d8741d908b6a09b470e38368b5fc1">rs_types.h</a>
@@ -408,11 +402,17 @@ $(function() {
 <li>RS2_EXTENSION_OBJECT_DETECTION_FRAME
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aaafdd4bd2eb58da68c1b39b5c6398a948">rs_types.h</a>
 </li>
-<li>RS2_EXTENSION_OBJECT_DETECTION_SENSOR
-: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa7e24d5e845ae43ee06a8685d76bf93b4">rs_types.h</a>
-</li>
 <li>RS2_EXTENSION_OPTIONS
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aad0b471682a80b618915cd94ca1811f0d">rs_types.h</a>
+</li>
+<li>RS2_EXTENSION_PERCEPTION_FRAME
+: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa472f844c3a9767062c8022eb08b254d4">rs_types.h</a>
+</li>
+<li>RS2_EXTENSION_PERCEPTION_PROFILE
+: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa6eaa0754d3117c87413bacea173296f5">rs_types.h</a>
+</li>
+<li>RS2_EXTENSION_PERCEPTION_SENSOR
+: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aab38a50d53212332a73dcd8c60db31345">rs_types.h</a>
 </li>
 <li>RS2_EXTENSION_PLAYBACK
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa50a39af1635929851fac646b3fe13e7c">rs_types.h</a>
@@ -1245,6 +1245,9 @@ $(function() {
 <li>RS2_OPTION_DEPTH_UNITS
 : <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2aee58e68df70c8343b05bea77ffa3a108">rs_option.h</a>
 </li>
+<li>RS2_OPTION_DETECTION_DISTANCE
+: <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a7cd7e5b6eb7e74a63901b7138f2041a1">rs_option.h</a>
+</li>
 <li>RS2_OPTION_DIGITAL_GAIN
 : <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2af38b52d50ab6490198885125391e9705">rs_option.h</a>
 </li>
@@ -1416,6 +1419,9 @@ $(function() {
 <li>RS2_OPTION_PROJECTOR_TEMPERATURE
 : <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a4f018c9ff9bbb1ccf523b7efc1db0b3b">rs_option.h</a>
 </li>
+<li>RS2_OPTION_READOUT_SHAPING
+: <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2aa7a955b473230da2c6bb9b39105ea835">rs_option.h</a>
+</li>
 <li>RS2_OPTION_RECEIVER_SENSITIVITY
 : <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a1fdf472b6056486d4dc2f8cce8dd2787">rs_option.h</a>
 </li>
@@ -1445,6 +1451,9 @@ $(function() {
 </li>
 <li>RS2_OPTION_SENSOR_MODE
 : <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a54297f8bb86881f4b38f3f642504bd0a">rs_option.h</a>
+</li>
+<li>RS2_OPTION_SENSORS_CONFIG_MODE
+: <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a49bd0d916b28de5958d4df64f27bb9bb">rs_option.h</a>
 </li>
 <li>RS2_OPTION_SEQUENCE_ID
 : <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a7dcca5eb6cd4859f548a2ef5b1047be0">rs_option.h</a>

@@ -16,9 +16,9 @@ pyrealsense2.software_sensor
    .. autosummary::
    
       ~software_sensor.__init__
-      ~software_sensor.add_inference_stream
       ~software_sensor.add_motion_stream
       ~software_sensor.add_option
+      ~software_sensor.add_perception_stream
       ~software_sensor.add_pose_stream
       ~software_sensor.add_read_only_option
       ~software_sensor.add_video_stream
@@ -26,10 +26,9 @@ pyrealsense2.software_sensor
       ~software_sensor.as_debug_stream_sensor
       ~software_sensor.as_depth_sensor
       ~software_sensor.as_fisheye_sensor
-      ~software_sensor.as_inference_sensor
       ~software_sensor.as_max_usable_range_sensor
       ~software_sensor.as_motion_sensor
-      ~software_sensor.as_object_detection_sensor
+      ~software_sensor.as_perception_sensor
       ~software_sensor.as_pose_sensor
       ~software_sensor.as_roi_sensor
       ~software_sensor.as_safety_sensor
@@ -54,11 +53,10 @@ pyrealsense2.software_sensor
       ~software_sensor.is_debug_stream_sensor
       ~software_sensor.is_depth_sensor
       ~software_sensor.is_fisheye_sensor
-      ~software_sensor.is_inference_sensor
       ~software_sensor.is_max_usable_range_sensor
       ~software_sensor.is_motion_sensor
-      ~software_sensor.is_object_detection_sensor
       ~software_sensor.is_option_read_only
+      ~software_sensor.is_perception_sensor
       ~software_sensor.is_pose_sensor
       ~software_sensor.is_roi_sensor
       ~software_sensor.is_safety_sensor
