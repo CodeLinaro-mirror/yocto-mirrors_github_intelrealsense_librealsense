@@ -131,6 +131,12 @@ async fn start_api_server(api_process: Arc<Mutex<Option<Child>>>, _api_port: Arc
 #[cfg(not(debug_assertions))]
 /// Find the FastAPI executable in bundled resources
 fn find_api_executable(exe_name: &str, app_handle: &AppHandle) -> Option<PathBuf> {
+    // Restrict to the known executable names so no caller-supplied value can steer Command::new().
+    if exe_name != "realsense_api" && exe_name != "realsense_api.exe" {
+        eprintln!("[Tauri] Rejected unexpected executable name: {}", exe_name);
+        return None;
+    }
+
     // In production, try to get the resource directory from the app handle
     if let Some(resource_dir) = app_handle.path_resolver().resource_dir() {
         let candidates = vec![
